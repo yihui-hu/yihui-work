@@ -45,3 +45,18 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## Sites referenced:
+1. [https://kevinnchen.com/](https://kevinnchen.com/)
+2. [https://gemmacope.land/](https://gemmacope.land/)
+3. [https://jake.isnt.online/](https://jake.isnt.online/)
+4. [https://www.sang.design/](https://www.sang.design/)
+5. [https://allpibslowplay.org/](https://allpibslowplay.org/#v2)
+6. [https://www.tiger.exposed/index](https://www.tiger.exposed/index)
+7. [https://tdingsun.github.io/reading-machines/](https://tdingsun.github.io/reading-machines/)
+8. [https://eternal.how/](https://eternal.how/)
+9. [http://r-m.work/](http://r-m.work/)
+10. [http://studioran.tokyo/](http://studioran.tokyo/)
+## Resources:
+1. [Astro Crash Course in 20 minutes](https://www.youtube.com/watch?v=zrPVTf761OI&t=4s)
+2. [Sass in 100 seconds](https://www.youtube.com/watch?v=akDIJa0AP5c)
