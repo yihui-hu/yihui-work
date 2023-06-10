@@ -57,8 +57,43 @@ hr {
   font-style: italic;
 }
 
+.work-link:hover {
+  text-decoration: none;
+}
+
 .deselected {
-  color: base.$gray-content;
+  filter: saturate(0);
+  opacity: 0.3;
+}
+
+.label-wrapper {
+  display: "flex"; 
+  flex-direction: "row"; 
+  gap: 5;
+}
+
+.new-label {
+  display: inline-block;
+  padding-inline: 4px;
+  border-radius: 2px;
+  background-color: base.$blue-bg;
+  width: auto;
+}
+
+.new-text {
+  color: base.$blue-text;
+}
+
+.wip-label {
+  display: inline-block;
+  padding-inline: 4px;
+  border-radius: 2px;
+  background-color: base.$orange-bg;
+  width: auto;
+}
+
+.wip-text {
+  color: base.$orange-text;
 }
 
 @media screen and (max-width: 1280px) {
@@ -68,7 +103,7 @@ hr {
     gap: 10px;
   }
   
-  .work-year {
+  .work-label {
     display: none;
   }
 }

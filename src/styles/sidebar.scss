@@ -1,5 +1,5 @@
 div {
-  font-family: "Fragment Mono", monospace;
+  font-family: "Fragment Mono", monospace, Arial, Helvetica, sans-serif;;
   font-weight: 200;
   font-size: 14px;
 }
@@ -14,6 +14,18 @@ a {
 
   &:hover {
     text-decoration: underline;
+  }
+}
+
+.name-link {
+  text-decoration: none;
+
+  &:visited {
+    color: black;
+  }
+
+  &:hover {
+    text-decoration: none;
   }
 }
 
@@ -54,6 +66,10 @@ a {
 }
 
 @media screen and (max-width: 864px) {
+  .about-blurb {
+    width: 70%;
+  }
+
   .sidebar-container {
     display: flex;
     flex-direction: column;
