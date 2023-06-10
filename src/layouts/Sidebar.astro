@@ -1,5 +1,46 @@
 ---
-
+import "../styles/sidebar.scss";
+import "@fontsource/fragment-mono";
+import WorksList from "../components/WorksList";
+import ListeningTo from "../components/ListeningTo.astro";
+import Reading from "../components/Reading.astro";
 ---
 
-<h2>Hi</h2>
+<div class="sidebar-container">
+  <p class="name">Yihui Hu</p>
+  <div class="about-container">
+    <p class="about-blurb">
+      I like to design and program. Currently studying Computer Science at
+      Tufts.
+    </p>
+    <div class="about-links">
+      I'm also on:
+      <ul class="list">
+        <li><a href="https://are.na/yihui-h" target="_blank">Are.na</a></li>
+        <li><a href="https://github.com/yihui-hu" target="_blank">GitHub</a></li>
+        <li><a href="https://twitter.com/_yihui" target="_blank">Twitter</a></li>
+        <li><a href="https://read.cv/yihui" target="_blank">Read.cv</a></li>
+        <li><a href="https://www.goodreads.com/user/show/62844518-yihui" target="_blank">Goodreads</a></li>
+      </ul>
+    </div>
+  </div>
+  <WorksList client:load />
+  <ListeningTo />
+  <Reading />
+  <div class="about-blurb">
+    <p>
+      This site is built in <a href="https://astro.build" target="_blank"
+        >Astro</a
+      > and typeset in <a
+        href="https://fonts.google.com/specimen/Fragment+Mono"
+        target="_blank">Fragment Mono</a
+      > and <a
+        href="https://www.behance.net/gallery/131908045/Printvetica?locale=en_US"
+        target="_blank">Printvetica</a
+      >. View the source code <a
+        href="https://github.com/yihui-hu/yihui-work"
+        target="_blank">here</a
+      >.
+    </p>
+  </div>
+</div>

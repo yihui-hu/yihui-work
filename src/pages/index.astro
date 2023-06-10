@@ -1,7 +1,8 @@
 ---
 import Sidebar from "../layouts/Sidebar.astro";
-import Content from "../layouts/Content.astro";
-import "../styles/global.css";
+import Content from "../layouts/Content";
+import "../styles/global.scss";
+import "../styles/index.scss";
 ---
 
 <html lang="en">
@@ -13,9 +14,9 @@ import "../styles/global.css";
     <title>Yihui Hu</title>
   </head>
   <body>
-    <div>
+    <div class={"index-container"}>
       <Sidebar />
-      <Content />
+      <Content client:only="react" />
     </div>
   </body>
 </html>
