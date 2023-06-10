@@ -14,9 +14,8 @@ const WorksList = () => {
       updateTags($tag);
     } else {
       const workItems = document.getElementsByClassName("work-item");
-      for (const item of workItems) {
-        item.className = "work-item deselected";
-      }
+      for (const item of workItems) item.className = "work-item deselected";
+
       const workSelected = document.getElementById($selected)!;
       workSelected.className = "work-item";
     }
@@ -37,10 +36,25 @@ const WorksList = () => {
       }
     }
 
-    const tags = document.getElementsByClassName('tag');
+    const tags = document.getElementsByClassName("tag");
     for (const tag of tags) {
       tag.className = tag.id === category ? "tag" : "tag deselected";
     }
+  }
+
+  function handleHover(title: string, onHover: boolean) {
+    const workItems = document.getElementsByClassName("work-item");
+    for (const item of workItems)
+      item.className = onHover ? "work-item deselected" : "work-item";
+
+    if (onHover) {
+      const workHovered = document.getElementById(title);
+      workHovered!.className = "work-item";
+    } else {
+      updateTags($tag);
+    }
+
+    onHover ? selectedWorkItem.set(title) : selectedWorkItem.set("none");
   }
 
   return (
@@ -75,19 +89,51 @@ const WorksList = () => {
       <div className="works-list">
         {works.map((work) => {
           return (
-            <div
-              key={work.title}
-              id={work.title}
-              className={`work-item`}
-              data-category={work.category}
-              onMouseEnter={() => selectedWorkItem.set(work.title)}
-              onMouseLeave={() => selectedWorkItem.set("none")}
-            >
-              <p className="work-title">{work.title}</p>
-              <p className="work-description">{work.description}</p>
-              <p className="work-blurb">{work.blurb}</p>
-              <p className="work-year">{work.year}</p>
-            </div>
+            <a className="work-link" href={work.url}>
+              <div
+                key={work.title}
+                id={work.title}
+                className={`work-item`}
+                data-category={work.category}
+                onMouseEnter={() => handleHover(work.title, true)}
+                onMouseLeave={() => handleHover(work.title, false)}
+              >
+                <p className="work-title">{work.title}</p>
+                <p className="work-description">{work.description}</p>
+                <p className="work-blurb">{work.blurb}</p>
+                <div className="work-label">
+                  {work.new ? (
+                    <div className="new-label">
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "row",
+                          gap: 5,
+                        }}
+                      >
+                        <p className="new-text">NEW</p>
+                        <p className="new-emoji">🌀</p>
+                      </div>
+                    </div>
+                  ) : work.wip ? (
+                    <div className="wip-label">
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "row",
+                          gap: 5,
+                        }}
+                      >
+                        <p className="wip-text">WIP</p>
+                        <p className="wip-emoji">🚧</p>
+                      </div>
+                    </div>
+                  ) : (
+                    <p className="work-year">{work.year}</p>
+                  )}
+                </div>
+              </div>
+            </a>
           );
         })}
       </div>

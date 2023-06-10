@@ -1,0 +1,37 @@
+---
+import Sidebar from "./Sidebar.astro";
+import "../styles/global.scss";
+import "../styles/index.scss";
+import "../styles/article.scss";
+import '@fontsource-variable/Inter';
+const { frontmatter } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{frontmatter.title}</title>
+  </head>
+  <body>
+    <div class={"index-container"}>
+      <div id="desktop-sidebar">
+        <Sidebar />
+      </div>
+      <div class={"article-container"}>
+        <slot />
+      </div>
+      <div id="mobile-sidebar">
+        <Sidebar />
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  const mobile = window.innerWidth <= 864 ? true : false;
+  document.getElementById("desktop-sidebar")!.style.display = mobile ? "none" : "block";
+  document.getElementById("mobile-sidebar")!.style.display = mobile ? "block" : "none";
+</script>
