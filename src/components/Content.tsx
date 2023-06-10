@@ -13,7 +13,7 @@
 // </div>
 
 import { useEffect } from "react";
-import WorksOverview from "../components/WorksOverview";
+import WorksOverview from "./WorksOverview";
 import "../styles/content.scss";
 import { useStore } from "@nanostores/react";
 import { selectedWorkItem } from "../store/store";
@@ -25,7 +25,7 @@ const Content = () => {
     document.getElementById("content-message")!.style.display = "none";
     setTimeout(() => {
       document.getElementById("content-message")!.style.display = "";
-    }, 1500);
+    }, 1000);
   }, []) 
 
   return (
