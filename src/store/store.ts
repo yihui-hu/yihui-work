@@ -1,6 +1,7 @@
-import { atom } from 'nanostores';
+import { atom } from "nanostores";
 
-const selectedWorks = atom("all");
-const selectedTag = atom("all");
+const selectedWorks = atom<string>("all");
+const selectedTag = atom<string>("all");
+const selectedWorkItem = atom<string>("none");
 
-export { selectedWorks, selectedTag }
+export { selectedWorks, selectedTag, selectedWorkItem };
