@@ -3,5 +3,7 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://yihui-hu.github.io',
+  base: '/yihui-work',
   integrations: [react()],
 });
