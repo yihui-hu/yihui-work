@@ -1,0 +1,66 @@
+div {
+  font-family: "Fragment Mono", monospace;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  
+  &:visited {
+    color: black;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  gap: 55px;
+  padding: 25px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about-blurb {
+  width: 60%;
+}
+
+.about-links {
+  margin-top: 20px;
+}
+
+.list {
+  margin-top: 0px;
+  margin-left: -10px;
+  margin-bottom: -5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .about-blurb {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 864px) {
+  .sidebar-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 55px;
+    padding: 15px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+}

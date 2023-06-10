@@ -1,0 +1,30 @@
+@use 'base';
+
+.content-wrapper {
+  background-color: base.$gray-bg;
+}
+
+.content-container {
+  position: relative;
+  padding: 25px;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.content-message {
+  position: absolute;
+  color: base.$gray-content;
+  width: 25%;
+  left: 25%;
+  top: 50%;
+}
+
+.content-message-hidden {
+  display: none;
+  position: absolute;
+  color: base.$gray-content;
+  width: 25%;
+  left: 25%;
+  top: 50%;
+}
