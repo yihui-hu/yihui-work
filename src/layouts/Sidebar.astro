@@ -7,7 +7,11 @@ import Reading from "../components/Reading.astro";
 ---
 
 <div class="sidebar-container">
-  <p class="name"><a class="name-link" href="/">Yihui Hu</a></p>
+  <p class="name">
+    <a class="name-link" href="/">
+      Yihui Hu
+    </a>
+  </p>
   <div class="about-container">
     <p class="about-blurb">
       I like to design and program. Currently studying Computer Science at
@@ -27,6 +31,10 @@ import Reading from "../components/Reading.astro";
   <WorksList client:load />
   <ListeningTo />
   <Reading />
+  <div>
+    <p>I'm currently:</p> 
+    <p>Enjoying summer 🍉☀️⛱️</p>
+  </div>
   <div class="about-blurb">
     <p>
       This site is built in <a href="https://astro.build" target="_blank"
@@ -43,4 +51,5 @@ import Reading from "../components/Reading.astro";
       >.
     </p>
   </div>
+  <p>Last updated: 10 Jun 2023 7:31pm EST</p>
 </div>

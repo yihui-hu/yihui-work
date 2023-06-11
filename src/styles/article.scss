@@ -1,4 +1,4 @@
-@use 'base';
+@use "base";
 
 .article-container *::selection {
   background-color: base.$gray-content;
@@ -6,22 +6,46 @@
 }
 
 .article-container {
-  font-family: "Inter Variable", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Inter Variable", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
   font-size: 15px;
   padding-block: 30px;
   padding-inline: 40px;
+  height: 100vh;
   overflow-y: scroll;
   scroll-behavior: smooth;
   background-color: black;
   color: rgb(223, 223, 223);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 600;
 }
 
-p {
+p,
+ul,
+li {
   font-weight: 300;
+}
+
+.article-container a {
+  color: rgb(154, 154, 154);
+  text-decoration: none;
+
+  &:hover {
+    color: rgb(154, 154, 154);
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: rgb(154, 154, 154);
+  }
 }
 
 code {
@@ -47,9 +71,10 @@ code {
 
 .github-dark {
   background-color: rgb(37, 37, 37) !important;
+  border: 1px solid rgb(57, 57, 57);
 }
 
-div [id^='user-content-fnref-'] {
+div [id^="user-content-fnref-"] {
   color: rgb(141, 141, 141);
   font-weight: 500;
 }
@@ -62,12 +87,27 @@ div [id^='user-content-fnref-'] {
   color: rgb(223, 223, 223) !important;
 }
 
+.image-container {
+  display: grid;
+  align-items: center;
+}
+
+.image-container img {
+  margin-block: 20px;
+}
+
+.article-container video {
+  width: 80%;
+}
+
 @media screen and (max-width: 864px) {
-  @media screen and (max-width: 864px) {  
-    .article-container {
-      padding: 15px;
-      overflow-y: scroll;
-      scroll-behavior: smooth;
-    }
+  .article-container {
+    padding: 15px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+
+  .article-container video {
+    width: 100%;
   }
 }
