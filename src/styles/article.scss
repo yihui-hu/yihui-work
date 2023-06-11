@@ -103,8 +103,7 @@ div [id^="user-content-fnref-"] {
 @media screen and (max-width: 864px) {
   .article-container {
     padding: 15px;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
+    height: auto;
   }
 
   .article-container video {
