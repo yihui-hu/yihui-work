@@ -28,3 +28,22 @@
   left: 25%;
   top: 50%;
 }
+
+@media screen and (max-width: 864px) {
+  .content-container {
+    position: relative;
+    padding: 15px;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  .content-message {
+    position: absolute;
+    color: base.$gray-content;
+    width: 50%;
+    left: 25%;
+    top: 50%;
+  }
+}
+
