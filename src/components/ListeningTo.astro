@@ -24,7 +24,7 @@ import "../styles/listeningTo.scss";
   try {
     const response = await fetch(
       `http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=yihuihu&api_key=${
-        import.meta.env.PUBLIC_LASTFM_API_KEY
+        process.env.PUBLIC_LASTFM_API_KEY
       }&format=json`
     );
     const data = await response.json();
