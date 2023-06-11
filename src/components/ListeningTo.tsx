@@ -6,7 +6,7 @@ const ListeningTo = () => {
   useEffect(() => {
     const fetchMusic = async () => {
       const response = await fetch(
-        `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=yihuihu&api_key=${process.env.PUBLIC_LASTFM_API_KEY}6&format=json&limit=1`
+        `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=yihuihu&api_key=4154ee8ba6685b36c18d650291b67dc6&format=json&limit=1`
       );
       const data = await response.json();
       const track = data.recenttracks.track[0];
