@@ -16,7 +16,7 @@ const { frontmatter } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <title>{frontmatter.title}</title>
   </head>
-  <body>
+  <body id="article-body">
     <div class={"index-container"}>
       <div id="sidebar">
         <Sidebar />
@@ -31,5 +31,5 @@ const { frontmatter } = Astro.props;
 <script>
   const mobile = window.innerWidth <= 864 ? true : false;
   document.getElementById("sidebar")!.style.display = mobile ? "none" : "block";
-  // document.getElementById("mobile-sidebar")!.style.display = mobile ? "block" : "none";
+  document.getElementById("article-body")!.style.backgroundColor = mobile ? "black" : "";
 </script>
