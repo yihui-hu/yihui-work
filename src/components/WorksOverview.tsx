@@ -49,8 +49,8 @@ const WorksOverview = () => {
             >
               <Draggable
                 defaultPosition={positions[index]}
-                onMouseDown={() => selectedWorks.set(imageData.id)}
-                onStart={() => selectedWorks.set(imageData.id)}
+                onMouseDown={width < 864 ? () => {} : () => selectedWorks.set(imageData.id)}
+                onStart={width < 864 ? () => {} : () => selectedWorks.set(imageData.id)}
                 // disabled={width < 864 ? true : false}
               >
                 <img
@@ -63,8 +63,8 @@ const WorksOverview = () => {
                   }}
                   draggable={false}
                   src={imageData.url}
-                  onMouseEnter={() => selectedWorks.set(imageData.id)}
-                  onMouseLeave={() => selectedWorks.set("all")}
+                  onMouseEnter={width < 864 ? () => {} : () => selectedWorks.set(imageData.id)}
+                  onMouseLeave={width < 864 ? () => {} : () => selectedWorks.set("all")}
                 />
               </Draggable>
             </motion.div>
