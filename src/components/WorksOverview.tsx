@@ -51,7 +51,7 @@ const WorksOverview = () => {
                 defaultPosition={positions[index]}
                 onMouseDown={() => selectedWorks.set(imageData.id)}
                 onStart={() => selectedWorks.set(imageData.id)}
-                disabled={width < 864 ? true : false}
+                // disabled={width < 864 ? true : false}
               >
                 <img
                   style={{
