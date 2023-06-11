@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { works } from "../data/works";
 import { useStore } from "@nanostores/react";
 import { selectedWorks, selectedTag, selectedWorkItem } from "../store/store";
+import { isMobile } from 'react-device-detect';
 import "../styles/worksList.scss";
 
 const WorksList = () => {
@@ -94,8 +95,8 @@ const WorksList = () => {
                 id={work.title}
                 className={`work-item`}
                 data-category={work.category}
-                onMouseEnter={() => handleHover(work.title, true)}
-                onMouseLeave={() => handleHover(work.title, false)}
+                onMouseEnter={isMobile ? () => {} : () => handleHover(work.title, true)}
+                onMouseLeave={isMobile ? () => {} : () => handleHover(work.title, false)}
               >
                 <p className="work-title">{work.title}</p>
                 <p className="work-description">{work.description}</p>
