@@ -15,8 +15,10 @@ import "../styles/index.scss";
   </head>
   <body>
     <div class={"index-container"}>
-      <Sidebar />
+      <div style={{height: "100vh"}}>
       <Content client:only="react" />
+      </div>
+      <Sidebar />
     </div>
   </body>
 </html>

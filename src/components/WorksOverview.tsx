@@ -45,12 +45,13 @@ const WorksOverview = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: (index + 1) / 100, duration: 0.06 }}
+              key={index}
             >
               <Draggable
-                key={index}
                 defaultPosition={positions[index]}
                 onMouseDown={() => selectedWorks.set(imageData.id)}
                 onStart={() => selectedWorks.set(imageData.id)}
+                disabled={width < 864 ? true : false}
               >
                 <img
                   style={{

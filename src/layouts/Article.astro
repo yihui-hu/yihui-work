@@ -18,11 +18,11 @@ const { frontmatter } = Astro.props;
   </head>
   <body id="article-body">
     <div class={"index-container"}>
-      <div id="sidebar">
-        <Sidebar />
-      </div>
       <div class={"article-container"}>
         <slot />
+      </div>
+      <div id="sidebar">
+        <Sidebar />
       </div>
     </div>
   </body>
@@ -30,6 +30,5 @@ const { frontmatter } = Astro.props;
 
 <script>
   const mobile = window.innerWidth <= 864 ? true : false;
-  document.getElementById("sidebar")!.style.display = mobile ? "none" : "block";
   document.getElementById("article-body")!.style.backgroundColor = mobile ? "black" : "";
 </script>
