@@ -14,6 +14,7 @@
 ## Design / Frontend
 
 - [ ] Favicon
+- [ ] Placeholder album art
 
 ## Bugs / Improvements
 
