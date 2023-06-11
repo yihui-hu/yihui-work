@@ -89,9 +89,8 @@ const WorksList = () => {
       <div className="works-list">
         {works.map((work) => {
           return (
-            <a className="work-link" href={work.url}>
+            <a key={work.title} className="work-link" href={work.url}>
               <div
-                key={work.title}
                 id={work.title}
                 className={`work-item`}
                 data-category={work.category}
