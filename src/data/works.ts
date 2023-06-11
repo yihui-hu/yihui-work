@@ -96,7 +96,7 @@ export const works: WorkListItem[] = [
     blurb: "old site",
     year: "2021",
     category: "code design art",
-    url: "https://github.com/yihui-hu/yhhu-xyz",
+    url: "https://yhhu.xyz",
     new: false,
     wip: false,
   },

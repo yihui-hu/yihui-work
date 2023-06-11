@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import "../styles/listeningTo.scss";
-// @TODO: replace placeholder track art
 
 const ListeningTo = () => {
   useEffect(() => {
