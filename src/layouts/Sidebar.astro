@@ -2,7 +2,7 @@
 import "../styles/sidebar.scss";
 import "@fontsource/fragment-mono";
 import WorksList from "../components/WorksList";
-import ListeningTo from "../components/ListeningTo.astro";
+import ListeningTo from "../components/ListeningTo";
 import Reading from "../components/Reading.astro";
 ---
 
@@ -29,7 +29,7 @@ import Reading from "../components/Reading.astro";
     </div>
   </div>
   <WorksList client:load />
-  <ListeningTo />
+  <ListeningTo client:load />
   <Reading />
   <div>
     <p>I'm currently:</p> 
