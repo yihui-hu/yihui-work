@@ -24,7 +24,8 @@ dd {
 p,
 a,
 li,
-div {
+div,
+br {
   &::selection {
     color: base.$gray-bg;
     background-color: base.$gray-content;

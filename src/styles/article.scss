@@ -18,6 +18,20 @@
   scroll-behavior: smooth;
   background-color: black;
   color: rgb(223, 223, 223);
+
+  a {
+    color: rgb(154, 154, 154);
+    text-decoration: none;
+
+    &:hover {
+      color: rgb(154, 154, 154);
+      text-decoration: underline;
+    }
+
+    &:visited {
+      color: rgb(154, 154, 154);
+    }
+  }
 }
 
 h1,
@@ -33,20 +47,6 @@ p,
 ul,
 li {
   font-weight: 300;
-}
-
-.article-container a {
-  color: rgb(154, 154, 154);
-  text-decoration: none;
-
-  &:hover {
-    color: rgb(154, 154, 154);
-    text-decoration: underline;
-  }
-
-  &:visited {
-    color: rgb(154, 154, 154);
-  }
 }
 
 code {
@@ -98,12 +98,57 @@ div [id^="user-content-fnref-"] {
   width: 100%;
 }
 
-.article-container video {
-  width: 80%;
-}
-
 .back-button {
   display: none;
+}
+
+table {
+  border: 1px solid rgb(57, 57, 57);
+  border-radius: 3px;
+  border-collapse: separate;
+  overflow-wrap: break-word;
+  border-spacing: 0;
+  width: 100%;
+}
+
+table tr:not(:last-child) td,
+th {
+  border-bottom: 1px solid rgb(57, 57, 57);
+}
+
+td:not(:last-child),
+th:not(:last-child) {
+  border-right: 1px solid rgb(57, 57, 57);
+}
+
+td,
+th {
+  text-align: left;
+  font-weight: normal;
+  padding: 0.3rem 0.5rem;
+}
+
+th:first-of-type {
+  background-color: rgb(37, 37, 37);
+  border-radius: 2px 0 0 0;
+}
+
+th:not(:first-of-type) {
+  background-color: rgb(37, 37, 37);
+}
+
+th:not(:last-of-type) {
+  background-color: rgb(37, 37, 37);
+}
+
+th:last-of-type {
+  background-color: rgb(37, 37, 37);
+  border-radius: 0 2px 0 0;
+}
+
+td {
+  display: table-cell;
+  vertical-align: inherit;
 }
 
 @media screen and (max-width: 864px) {
@@ -114,11 +159,7 @@ div [id^="user-content-fnref-"] {
   .article-container {
     padding: 15px;
     height: auto;
-    min-height: 100vh
-  }
-
-  .article-container video {
-    width: 100%;
+    min-height: 100vh;
   }
 
   .back-button {
@@ -130,8 +171,8 @@ div [id^="user-content-fnref-"] {
 
   .back-button p {
     font-family: "Inter Variable", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
     color: rgb(223, 223, 223);
     background-color: black;
     padding-left: 10px;
