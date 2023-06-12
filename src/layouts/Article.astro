@@ -10,42 +10,30 @@ const { frontmatter } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
     <meta name="theme-color" content="#000000" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <title>{frontmatter.title}</title>
   </head>
-    <body id="article-body">
-      <div id="mobile">
-        <div class="index-container">
-          <div class="article-container">
-            <slot />
-          </div>
-          <div id="sidebar">
-            <Sidebar />
-          </div>
-        </div>
+  <body id="article-body">
+    <div class="index-container">
+      <div id="sidebar">
+        <Sidebar/>
       </div>
-      <div id="desktop">
-        <div class="index-container">
-          <div id="sidebar">
-            <Sidebar />
-          </div>
-          <div class="article-container">
-            <slot />
-          </div>
-        </div>
+      <div class="article-container">
+        <slot />
       </div>
-    </body>
+    </div>
+  </body>
 </html>
 
-<script is:inline>
+<script>
   const mobile = window.innerWidth <= 864 ? true : false;
-  document.getElementById("article-body").style.backgroundColor = mobile ? "black" : "";
-  if (mobile) {
-    document.getElementById("desktop").remove();
-  } else {
-    document.getElementById("mobile").remove();
-  }
+  document.getElementById("article-body")!.style.backgroundColor = mobile
+    ? "black"
+    : "";
 </script>

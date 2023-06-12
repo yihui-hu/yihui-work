@@ -24,11 +24,15 @@ const Content = () => {
   const $workItem = useStore(selectedWorkItem);
 
   useEffect(() => {
-    document.getElementById("content-message")!.style.display = "none";
-    setTimeout(() => {
-      document.getElementById("content-message")!.style.display = "";
-    }, 1000);
-  }, []) 
+    try {
+      document.getElementById("content-message")!.style.display = "none";
+      setTimeout(() => {
+        document.getElementById("content-message")!.style.display = "";
+      }, 1000);
+    } catch (err) {
+      console.log(err);
+    }
+  }, []);
 
   return (
     <div className="content-wrapper">
@@ -36,12 +40,11 @@ const Content = () => {
         <p
           id="content-message"
           className={
-            $workItem === "none"
-              ? "content-message"
-              : "content-message-hidden"
+            $workItem === "none" ? "content-message" : "content-message-hidden"
           }
         >
-          Thanks for helping me clear the table. { width < 864 && "Scroll down to see more of my works."}
+          Thanks for helping me clear the table.{" "}
+          {width < 864 && "Scroll down to see more of my works."}
         </p>
         <WorksOverview />
       </div>
