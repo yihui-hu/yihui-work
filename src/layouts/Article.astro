@@ -16,30 +16,28 @@ const { frontmatter } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <title>{frontmatter.title}</title>
   </head>
-  <div id="mobile">
     <body id="article-body">
-      <div class="index-container">
-        <div class="article-container">
-          <slot />
+      <div id="mobile">
+        <div class="index-container">
+          <div class="article-container">
+            <slot />
+          </div>
+          <div id="sidebar">
+            <Sidebar />
+          </div>
         </div>
-        <div id="sidebar">
-          <Sidebar />
+      </div>
+      <div id="desktop">
+        <div class="index-container">
+          <div id="sidebar">
+            <Sidebar />
+          </div>
+          <div class="article-container">
+            <slot />
+          </div>
         </div>
       </div>
     </body>
-  </div>
-  <div id="desktop">
-    <body id="article-body">
-      <div class="index-container">
-        <div id="sidebar">
-          <Sidebar />
-        </div>
-        <div class="article-container">
-          <slot />
-        </div>
-      </div>
-    </body>
-  </div>
 </html>
 
 <script is:inline>
