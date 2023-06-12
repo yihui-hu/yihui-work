@@ -16,19 +16,38 @@ const { frontmatter } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <title>{frontmatter.title}</title>
   </head>
-  <body id="article-body">
-    <div class={"index-container"}>
-      <div class={"article-container"}>
-        <slot />
+  <div id="mobile">
+    <body id="article-body">
+      <div class="index-container">
+        <div class="article-container">
+          <slot />
+        </div>
+        <div id="sidebar">
+          <Sidebar />
+        </div>
       </div>
-      <div id="sidebar">
-        <Sidebar />
+    </body>
+  </div>
+  <div id="desktop">
+    <body id="article-body">
+      <div class="index-container">
+        <div id="sidebar">
+          <Sidebar />
+        </div>
+        <div class="article-container">
+          <slot />
+        </div>
       </div>
-    </div>
-  </body>
+    </body>
+  </div>
 </html>
 
-<script>
+<script is:inline>
   const mobile = window.innerWidth <= 864 ? true : false;
-  document.getElementById("article-body")!.style.backgroundColor = mobile ? "black" : "";
+  document.getElementById("article-body").style.backgroundColor = mobile ? "black" : "";
+  if (mobile) {
+    document.getElementById("desktop").remove();
+  } else {
+    document.getElementById("mobile").remove();
+  }
 </script>

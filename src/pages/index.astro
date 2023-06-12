@@ -14,11 +14,30 @@ import "../styles/index.scss";
     <title>Yihui Hu</title>
   </head>
   <body>
-    <div class={"index-container"}>
-      <div style={{height: "100vh"}}>
-      <Content client:only="react" />
+    <div id="mobile">
+      <div class={"index-container"}>
+        <div style={{ height: "100vh" }}>
+          <Content client:only="react" />
+        </div>
+        <Sidebar />
       </div>
-      <Sidebar />
+    </div>
+    <div id="desktop">
+      <div class={"index-container"}>
+        <Sidebar />
+        <div style={{ height: "100vh" }}>
+          <Content client:only="react" />
+        </div>
+      </div>
     </div>
   </body>
 </html>
+
+<script is:inline>
+  const mobile = window.innerWidth <= 864 ? true : false;
+  if (mobile) {
+    document.getElementById("desktop").remove();
+  } else {
+    document.getElementById("mobile").remove();
+  }
+</script>
