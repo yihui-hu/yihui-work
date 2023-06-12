@@ -18,8 +18,6 @@ import "../styles/content.scss";
 import { useStore } from "@nanostores/react";
 import { selectedWorkItem } from "../store/store";
 
-const width = window.innerWidth;
-
 const Content = () => {
   const $workItem = useStore(selectedWorkItem);
 
@@ -43,8 +41,7 @@ const Content = () => {
             $workItem === "none" ? "content-message" : "content-message-hidden"
           }
         >
-          Thanks for helping me clear the table.{" "}
-          {width < 864 && "Scroll down to see more of my works."}
+          Thanks for helping me clear the table.
         </p>
         <WorksOverview />
       </div>

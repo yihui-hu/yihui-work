@@ -22,9 +22,12 @@ const { frontmatter } = Astro.props;
   <body id="article-body">
     <div class="index-container">
       <div id="sidebar">
-        <Sidebar/>
+        <Sidebar />
       </div>
       <div class="article-container">
+        <div class="back-button">
+          <p class="back-button"><a href="/">Home</a></p>
+        </div>
         <slot />
       </div>
     </div>
