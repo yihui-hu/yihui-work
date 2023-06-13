@@ -1,3 +1,5 @@
+@use 'base';
+
 div {
   font-family: "Fragment Mono", monospace, Arial, Helvetica, sans-serif;;
   font-weight: 200;
@@ -17,11 +19,29 @@ a {
   }
 }
 
+.name {
+  display: flex;
+  justify-content: space-between;
+}
+
 .name-link {
   text-decoration: none;
 
   &:visited {
     color: black;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.about-link {
+  color: base.$gray-content;
+  text-decoration: none;
+
+  &:visited {
+    color: base.$gray-content;
   }
 
   &:hover {
@@ -67,6 +87,12 @@ a {
 }
 
 @media screen and (max-width: 864px) {
+  .about-blurb {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 640px) {
   .about-blurb {
     width: 70%;
   }

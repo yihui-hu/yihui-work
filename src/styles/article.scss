@@ -49,6 +49,10 @@ li {
   font-weight: 300;
 }
 
+.article-container p {
+  margin-bottom: 20px;
+}
+
 code {
   font-family: "Fragment Mono", monospace;
   font-size: 13px;
@@ -73,6 +77,7 @@ code {
 .github-dark {
   background-color: rgb(37, 37, 37) !important;
   border: 1px solid rgb(57, 57, 57);
+  margin-bottom: 40px;
 }
 
 div [id^="user-content-fnref-"] {
@@ -80,12 +85,16 @@ div [id^="user-content-fnref-"] {
   font-weight: 500;
 }
 
+.footnotes ::marker {
+  color: rgb(141, 141, 141);
+}
+
 #footnote-label {
   display: none;
 }
 
 .data-footnote-backref {
-  color: rgb(223, 223, 223) !important;
+  color: rgb(141, 141, 141) !important;
 }
 
 .image-container {
@@ -93,8 +102,12 @@ div [id^="user-content-fnref-"] {
   align-items: center;
 }
 
+.image-container p {
+  display: grid;
+  gap: 20px;
+}
+
 .image-container img {
-  margin-block: 20px;
   width: 100%;
 }
 
@@ -109,6 +122,7 @@ table {
   overflow-wrap: break-word;
   border-spacing: 0;
   width: 100%;
+  margin-bottom: 25px;
 }
 
 table tr:not(:last-child) td,
