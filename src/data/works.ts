@@ -86,7 +86,7 @@ export const works: WorkListItem[] = [
     blurb: "bulbapedia-lite",
     year: "2022",
     category: "code",
-    url: "https://pokesearch-simple.netlify.app/",
+    url: "/works/pokesearch",
     new: false,
     wip: false,
   },
