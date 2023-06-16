@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 1.2fr;
   height: 100vh;
   min-height: 100vh;
-  max-height: 100vh;
+  overflow-y: hidden;
 }
 
 @media screen and (max-width: 864px) {
@@ -12,6 +12,5 @@
     flex-direction: column;
     height: auto;
     min-height: auto;
-    max-height: auto;
   }
 }
