@@ -1,4 +1,4 @@
-@use 'base';
+@use "base";
 
 .about-page-wrapper {
   background-color: base.$gray-bg;
@@ -13,4 +13,63 @@
   flex-direction: column;
   height: 100vh;
   gap: 55px;
+}
+
+.about-image {
+  filter: grayscale(100);
+  border-radius: 8px;
+  width: 60%;
+}
+
+.about-image-caption {
+  color: gray;
+  margin-top: 7px;
+  font-size: 11px;
+}
+
+.about-blurb {
+  width: 60%;
+}
+
+.back-button {
+  display: none;
+}
+
+@media screen and (max-width: 864px) {
+  #sidebar {
+    display: none;
+  }
+
+  .about-image-caption {
+    font-size: 12px;
+  }
+
+  .about-image,
+  .about-blurb {
+    width: 100%;
+  }
+
+  .about-page-container {
+    padding: 15px;
+  }
+
+  .back-button {
+    display: block;
+    position: fixed;
+    right: 15px;
+    top: 15px;
+  }
+
+  .back-button p > a {
+    color: base.$gray-content;
+    text-decoration: none;
+  
+    &:visited {
+      color: base.$gray-content;
+    }
+  
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }

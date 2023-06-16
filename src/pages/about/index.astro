@@ -15,23 +15,20 @@ import "../../styles/about.scss";
     <title>Yihui Hu</title>
   </head>
   <body>
-    <div class={"index-container"}>
-      <Sidebar />
+    <div class="index-container">
+      <div id="sidebar">
+        <Sidebar />
+      </div>
       <div class="about-page-wrapper">
         <div class="about-page-container">
           <p>Me</p>
           <div>
-          <img
+          <img class="about-image"
             src="/assets/about/toe-recreation.gif"
-            style={{
-              filter: "grayscale(100)",
-              borderRadius: "8px",
-              width: "60%",
-            }}
           />
-          <p style={{ color: "gray", marginTop: "7px", fontSize: "11px"}}>c. Dec 2021</p>
+          <p class="about-image-caption">c. Dec 2021</p>
           </div>
-          <div style={{ width: "60%" }}>
+          <div class="about-blurb">
             <p>
               Hello! I'm Yihui.
             </p>
@@ -44,11 +41,21 @@ import "../../styles/about.scss";
             </p>
             <br/>
             <p>
-              You can view my CV <a href="/">here</a>.
+              You can view my CV <a href="/assets/about/Yihui_Hu_CV_2023.pdf">here</a>.
             </p>
           </div>
+        </div>
+        <div class="back-button">
+          <p class="back-button"><a href="/">Home</a></p>
         </div>
       </div>
     </div>
   </body>
 </html>
+
+<script>
+  const mobile = window.innerWidth <= 864 ? true : false;
+  document.getElementById("article-body")!.style.backgroundColor = mobile
+    ? "black"
+    : "";
+</script>
