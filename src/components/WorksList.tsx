@@ -86,7 +86,7 @@ const WorksList = () => {
           art
         </p>
       </div>
-      <hr></hr>
+      <hr className="works-hr"></hr>
       <div className="works-list">
         {works.map((work) => {
           return (

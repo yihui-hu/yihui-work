@@ -15,8 +15,9 @@ const { frontmatter } = Astro.props;
       content="black-translucent"
     />
     <meta name="theme-color" content="#000000" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="description" content={frontmatter.description} />
     <title>{frontmatter.title}</title>
   </head>
   <body id="article-body">
