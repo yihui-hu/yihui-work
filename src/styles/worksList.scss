@@ -1,13 +1,5 @@
 @use 'base';
 
-@font-face {
-  font-family: 'Printvetica';
-  src: url('/fonts/printvetica-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 .works-container {
   width: auto;
 }
@@ -18,10 +10,15 @@
   gap: 40px;
 }
 
+.works-hr {
+  border: 0.5px solid base.$gray-content;
+  margin-bottom: 20px;
+}
+
 .tags > p {
-  font-family: "Printvetica", sans-serif;
-  font-weight: "bold";
-  font-size: 15px;
+  font-family: "Fragment Mono", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
 }
 
 .tag {
@@ -36,11 +33,6 @@
   display: none;
 }
 
-hr {
-  border: 0.5px solid base.$gray-content;
-  margin-bottom: 20px;
-}
-
 .works-list {
   display: flex;
   flex-direction: column;
@@ -48,13 +40,9 @@ hr {
 
 .work-item {
   display: grid;
-  grid-template-columns: 1.5fr 5fr 1fr;
+  grid-template-columns: 1.7fr 5fr 1fr;
   cursor: pointer;
   padding-block: 2px;
-}
-
-.work-item:hover {
-  font-style: italic;
 }
 
 .work-link:hover {
@@ -99,7 +87,7 @@ hr {
 @media screen and (max-width: 1366px) {
   .work-item {
     display: grid;
-    grid-template-columns: 1.5fr 2fr 0.7fr;
+    grid-template-columns: 1.3fr 2fr 0.7fr;
     gap: 10px;
   }
 

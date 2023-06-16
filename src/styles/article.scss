@@ -5,13 +5,27 @@
   color: white;
 }
 
+.wip-banner {
+  background-color: orange;
+  margin-top: -30px;
+  margin-inline: -40px !important;
+  white-space: nowrap;
+  text-overflow: clip;
+}
+
+.wip-banner p {
+  font-size: 10px;
+  color: rgb(201, 87, 0);
+  padding-block: 2px;
+  padding-inline: 7px;
+}
+
 .article-container {
   font-family: "Inter Variable", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
   font-size: 15px;
-  padding-block: 30px;
-  padding-inline: 40px;
+  padding: 30px 40px 10px 40px;
   min-height: 100vh;
   height: 100vh;
   overflow-y: scroll;
@@ -35,12 +49,25 @@
 }
 
 h1,
+h2 {
+  margin-bottom: 5px;
+}
+
+h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
   font-weight: 600;
+  line-height: 1.2;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 20px;
 }
 
 p,
@@ -60,7 +87,7 @@ code {
   border-radius: 4px;
   padding-block: 2px;
   padding-inline: 4px;
-  color: rgb(223, 223, 223);
+  color: rgb(144, 144, 144);
 }
 
 .astro-code {
@@ -77,7 +104,7 @@ code {
 .github-dark {
   background-color: rgb(37, 37, 37) !important;
   border: 1px solid rgb(57, 57, 57);
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 div [id^="user-content-fnref-"] {
@@ -122,7 +149,7 @@ table {
   overflow-wrap: break-word;
   border-spacing: 0;
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 table tr:not(:last-child) td,
@@ -165,13 +192,34 @@ td {
   vertical-align: inherit;
 }
 
+blockquote {
+  background: rgb(37, 37, 37) !important;
+  border-left: 5px solid #4e4e4e;
+  margin: 20px 0px 20px 20px;
+  padding-block: 15px;
+  padding-inline: 20px;
+  quotes: "\201C""\201D""\2018""\2019";
+
+  p {
+    margin-bottom: 0px !important;
+  }
+}
+
+hr {
+  border: 0.5px solid #4e4e4e;
+}
+
+iframe {
+  margin-bottom: 20px;
+}
+
 @media screen and (max-width: 864px) {
   #sidebar {
     display: none;
   }
 
   .article-container {
-    padding: 15px;
+    padding: 15px 15px 5px 15px;
     height: auto;
     min-height: 100vh;
   }
@@ -188,8 +236,26 @@ td {
       "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
       "Helvetica Neue", sans-serif;
     color: rgb(223, 223, 223);
-    background-color: black;
+    background-color: rgb(0, 0, 0, 0.6);
     padding-left: 10px;
+    padding-right: 10px;
     padding-block: 5px;
   }
+
+  .wip-banner {
+    background-color: orange;
+    margin-top: -15px;
+    margin-inline: -15px !important;
+    margin-bottom: -10px;
+    white-space: nowrap;
+    text-overflow: clip;
+  }
+  
+  .wip-banner p {
+    font-size: 10px;
+    color: rgb(201, 87, 0);
+    padding-block: 2px;
+    padding-inline: 7px;
+  }
+  
 }
