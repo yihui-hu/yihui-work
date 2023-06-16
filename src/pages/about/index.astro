@@ -1,0 +1,54 @@
+---
+import Sidebar from "../../layouts/Sidebar.astro";
+import "../../styles/global.scss";
+import "../../styles/index.scss";
+import "../../styles/about.scss";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content="Yihui Hu personal site" />
+    <title>Yihui Hu</title>
+  </head>
+  <body>
+    <div class={"index-container"}>
+      <Sidebar />
+      <div class="about-page-wrapper">
+        <div class="about-page-container">
+          <p>Me</p>
+          <div>
+          <img
+            src="../../../public/assets/about/toe-recreation.gif"
+            style={{
+              filter: "grayscale(100)",
+              borderRadius: "8px",
+              width: "60%",
+            }}
+          />
+          <p style={{ color: "gray", marginTop: "7px", fontSize: "11px"}}>c. Dec 2021</p>
+          </div>
+          <div style={{ width: "60%" }}>
+            <p>
+              Hello! I'm Yihui.
+            </p>
+            <br/>
+            <p>
+              I'm from Singapore, currently studying CS at Tufts in Medford. 
+              I'm interested in creating shared experiences on the web and
+              building with polish and performance in mind. In my free time, I
+              continue to explore type, print, design and zine-making.
+            </p>
+            <br/>
+            <p>
+              You can view my CV <a href="/">here</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

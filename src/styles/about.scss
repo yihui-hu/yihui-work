@@ -1,0 +1,16 @@
+@use 'base';
+
+.about-page-wrapper {
+  background-color: base.$gray-bg;
+}
+
+.about-page-container {
+  position: relative;
+  padding: 25px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  gap: 55px;
+}
