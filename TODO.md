@@ -1,8 +1,12 @@
 ## Content
 
-- [ ] Write-up for henesys
-- [ ] Write-up for f-c-d
-- [ ] Write-up for arith
+- [x] Write-up for henesys
+- [x] Write-up for f-c-d
+- [x] Write-up for arith
+- [x] Fuller About Page
+- [ ] Link to old writing
+- [ ] Add refs in tables for misc. art
+- [ ] Add gifs to y0p
 
 ## Functionality / Code
 
@@ -10,20 +14,31 @@
 - [ ] Refactor Content + Sidebar files
 - [ ] Update base.scss with more base vars/styling
 - [ ] Compress images
+- [ ] Fetch last website update using GitHub API
+- [x] Add `<meta name="description" content="...">` to articles using frontmatter
 
 ## Design / Frontend
 
 - [ ] Favicon
+- [ ] Superellipse elements / border 1px solid black 0.5 opacity
 - [ ] Placeholder album art
+- [x] Retire Printvetica
 
 ## Bugs / Improvements
 
 - [ ] Fix hover work item on tagged view
-- [ ] Check tag syncing with links etc.
-- [ ] Fix footer on mobile (article view)
-- [ ] Fix live music
+- [ ] Check tag syncing with links etc. (all, code, design, art)
+- [x] Fix footer on mobile (article view)
+- [x] Black / dynamic background for article view (use frontmatter)
+- [x] Fix live music
 - [ ] Fix ZINEDEF image widths on article
-- [ ] Fix font size on landscape + standardize
+- [ ] Fix font size on landscape / standardize (especially in article view)
+- [ ] Fix framer motion on Safari
+- [x] Remove `<br />` and use `<p>` with margins in `.md` files
+- [ ] Fix footer on iPad / tablet devices
+- [ ] Update `I'm currently:` section
+- [ ] Fix footer to be bottom of screen on large devices
+- [ ] Clean up / rename files
 
 ## Documentation
 
