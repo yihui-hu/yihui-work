@@ -1,15 +1,17 @@
 .index-container {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
+  height: 100vh;
   min-height: 100vh;
+  max-height: 100vh;
 }
 
 @media screen and (max-width: 864px) {
   .index-container {
     display: flex;
     flex-direction: column;
-    min-height: auto;
     height: auto;
+    min-height: auto;
     max-height: auto;
   }
 }

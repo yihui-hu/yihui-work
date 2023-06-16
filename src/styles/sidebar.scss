@@ -80,6 +80,10 @@ a {
   margin-bottom: -5px;
 }
 
+.last-updated {
+  color: base.$gray-content;
+}
+
 @media screen and (max-width: 1024px) {
   .about-blurb {
     width: 80%;
