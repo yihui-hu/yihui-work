@@ -8,5 +8,8 @@
   .index-container {
     display: flex;
     flex-direction: column;
+    min-height: auto;
+    height: auto;
+    max-height: auto;
   }
 }
