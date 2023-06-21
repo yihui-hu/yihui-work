@@ -3,8 +3,20 @@ import "../styles/sidebar.scss";
 import "@fontsource/fragment-mono";
 import WorksList from "../components/WorksList";
 import ListeningTo from "../components/ListeningTo";
-import LastUpdated from "../components/LastUpdated";
 import Reading from "../components/Reading.astro";
+
+const response = await fetch(
+  `https://api.github.com/repos/yihui-hu/yihui-work/commits`
+);
+const data = await response.json();
+
+const url = data[0].html_url;
+
+const rawDate = data[0]!.commit!.committer!.date as string;
+const js = Date.parse(rawDate);
+const timestamp = js;
+const date = new Date(timestamp);
+const dateFormat = date.toDateString();
 ---
 
 <div class="sidebar-container">
@@ -59,33 +71,7 @@ import Reading from "../components/Reading.astro";
       >.
     </p>
   </div>
-  <p class="last-updated">Last updated: Loading...</p>
+  <p class="last-updated">
+    <a href={url} id="last-updated"> Last updated: {dateFormat}</a>
+  </p>
 </div>
-
-<script type="module">
-  import { Octokit } from "https://esm.sh/@octokit/core";
-
-  const octokit = new Octokit({
-    auth: process.env.GITHUB_API_KEY,
-  });
-
-  const response = await octokit.request("GET /repos/{owner}/{repo}/commits", {
-    owner: "yihui-hu",
-    repo: "yihui-work",
-    headers: {
-      "X-GitHub-Api-Version": "2022-11-28",
-    },
-  });
-
-  const url = response.data[0].html_url;
-  const rawDate = response.data[0].commit.committer.date;
-
-  const js = Date.parse(rawDate);
-  const timestamp = parseInt(js);
-  const date = new Date(timestamp);
-  const dateFormat = date.toDateString();
-
-  document.getElementsByClassName(
-    "last-updated"
-  )[0].innerHTML = `<a href=${url} id="last-updated"> Last updated: ${dateFormat}</a>`;
-</script>
