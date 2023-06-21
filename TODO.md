@@ -5,6 +5,7 @@
 - [x] Write-up for arith
 - [x] Fuller About Page
 - [ ] Link to old writing
+- [ ] Add logs page with table of GitHub commits
 - [ ] Add refs in tables for misc. art
 - [ ] Add gifs to y0p
 
@@ -14,7 +15,7 @@
 - [ ] Refactor Content + Sidebar files
 - [ ] Update base.scss with more base vars/styling
 - [ ] Compress images
-- [ ] Fetch last website update using GitHub API
+- [x] Fetch last website update using GitHub API
 - [x] Add `<meta name="description" content="...">` to articles using frontmatter
 
 ## Design / Frontend
