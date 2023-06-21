@@ -80,8 +80,13 @@ a {
   margin-bottom: -5px;
 }
 
-.last-updated {
+.last-updated,
+#last-updated {
   color: base.$gray-content;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 @media screen and (max-width: 1024px) {

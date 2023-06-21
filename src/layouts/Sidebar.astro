@@ -3,6 +3,7 @@ import "../styles/sidebar.scss";
 import "@fontsource/fragment-mono";
 import WorksList from "../components/WorksList";
 import ListeningTo from "../components/ListeningTo";
+import LastUpdated from "../components/LastUpdated";
 import Reading from "../components/Reading.astro";
 ---
 
@@ -20,18 +21,27 @@ import Reading from "../components/Reading.astro";
       I'm also on:
       <ul class="list">
         <li><a href="https://are.na/yihui-h" target="_blank">Are.na</a></li>
-        <li><a href="https://github.com/yihui-hu" target="_blank">GitHub</a></li>
-        <li><a href="https://twitter.com/_yihui" target="_blank">Twitter</a></li>
+        <li>
+          <a href="https://github.com/yihui-hu" target="_blank">GitHub</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/_yihui" target="_blank">Twitter</a>
+        </li>
         <li><a href="https://read.cv/yihui" target="_blank">Read.cv</a></li>
-        <li><a href="https://www.goodreads.com/user/show/62844518-yihui" target="_blank">Goodreads</a></li>
+        <li>
+          <a
+            href="https://www.goodreads.com/user/show/62844518-yihui"
+            target="_blank">Goodreads</a
+          >
+        </li>
       </ul>
     </div>
   </div>
-  <WorksList client:load/>
+  <WorksList client:load />
   <ListeningTo client:load />
   <Reading />
   <div>
-    <p>I'm currently:</p> 
+    <p>I'm currently:</p>
     <p>Enjoying summer 🍉☀️⛱️</p>
   </div>
   <div class="about-blurb">
@@ -41,14 +51,41 @@ import Reading from "../components/Reading.astro";
       > and typeset in <a
         href="https://fonts.google.com/specimen/Fragment+Mono"
         target="_blank">Fragment Mono</a
-      > and <a
-        href="https://fonts.google.com/specimen/Inter"
-        target="_blank">Inter</a
+      > and <a href="https://fonts.google.com/specimen/Inter" target="_blank"
+        >Inter</a
       >. View the source code <a
         href="https://github.com/yihui-hu/yihui-hu.github.io"
         target="_blank">here</a
       >.
     </p>
   </div>
-  <p class="last-updated">Last updated: 15 Jun 2023 10:53pm EST</p>
+  <p class="last-updated">Last updated: Loading...</p>
 </div>
+
+<script type="module">
+  import { Octokit } from "https://esm.sh/@octokit/core";
+
+  const octokit = new Octokit({
+    auth: `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`,
+  });
+
+  const response = await octokit.request("GET /repos/{owner}/{repo}/commits", {
+    owner: "yihui-hu",
+    repo: "yihui-work",
+    headers: {
+      "X-GitHub-Api-Version": "2022-11-28",
+    },
+  });
+
+  const url = response.data[0].html_url;
+  const rawDate = response.data[0].commit.committer.date;
+
+  const js = Date.parse(rawDate);
+  const timestamp = parseInt(js);
+  const date = new Date(timestamp);
+  const dateFormat = date.toDateString();
+
+  document.getElementsByClassName(
+    "last-updated"
+  )[0].innerHTML = `<a href=${url} id="last-updated"> Last updated: ${dateFormat}</a>`;
+</script>
