@@ -17,6 +17,7 @@
 - [ ] Compress images
 - [x] Fetch last website update using GitHub API
 - [x] Add `<meta name="description" content="...">` to articles using frontmatter
+- [ ] Optimize reader mode for articles (images not showing up)
 
 ## Design / Frontend
 
@@ -34,10 +35,10 @@
 - [x] Fix live music
 - [ ] Fix ZINEDEF image widths on article
 - [ ] Fix font size on landscape / standardize (especially in article view)
-- [ ] Fix framer motion on Safari
+- [x] Fix framer motion on Safari
 - [x] Remove `<br />` and use `<p>` with margins in `.md` files
 - [ ] Fix footer on iPad / tablet devices
-- [ ] Update `I'm currently:` section
+- [x] Update `I'm currently:` section
 - [ ] Fix footer to be bottom of screen on large devices
 - [ ] Clean up / rename files
 
