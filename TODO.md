@@ -37,11 +37,11 @@
 - [ ] Fix font size on landscape / standardize (especially in article view)
 - [x] Fix framer motion on Safari
 - [x] Remove `<br />` and use `<p>` with margins in `.md` files
-- [ ] Fix footer on iPad / tablet devices
+- [x] Fix footer on iPad / tablet devices
 - [x] Update `I'm currently:` section
 - [ ] Fix footer to be bottom of screen on large devices
 - [ ] Clean up / rename files
 
 ## Documentation
 
-- [ ] Finish README
+- [x] Finish README
