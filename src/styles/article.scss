@@ -216,11 +216,11 @@ iframe {
 
 @media screen and (max-width: 864px) {
   #sidebar {
-    padding: 25px 25px 15px 25px;
     display: none;
   }
 
   .article-container {
+    padding: 25px 25px 15px 25px;
     height: auto;
     min-height: auto;
   }
