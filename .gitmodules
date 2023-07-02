@@ -1,3 +1,3 @@
-[submodule "src/pages/yihui-work-journal"]
-	path = src/pages/yihui-work-journal
+[submodule "src/pages/writing"]
+	path = src/pages/writing
 	url = https://github.com/yihui-hu/yihui-work-journal.git
