@@ -93,6 +93,17 @@ a {
   .about-blurb {
     width: 80%;
   }
+
+  .sidebar-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 55px;
+    padding: 25px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    background-color: white;
+  }
 }
 
 @media screen and (max-width: 864px) {
