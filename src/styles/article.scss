@@ -220,7 +220,6 @@ iframe {
   }
 
   .article-container {
-    padding: 15px 15px 5px 15px;
     height: auto;
     min-height: auto;
   }
@@ -228,8 +227,8 @@ iframe {
   .back-button {
     display: block;
     position: fixed;
-    right: 15px;
-    top: 15px;
+    right: 25px;
+    top: 25px;
   }
 
   .back-button p {
@@ -251,12 +250,22 @@ iframe {
     white-space: nowrap;
     text-overflow: clip;
   }
-  
+
   .wip-banner p {
     font-size: 10px;
     color: rgb(201, 87, 0);
     padding-block: 2px;
     padding-inline: 7px;
   }
-  
+}
+
+@media screen and (max-width: 640px) {
+  .article-container {
+    padding: 15px 15px 5px 15px;
+  }
+
+  .back-button {
+    right: 15px;
+    top: 15px;
+  }
 }
