@@ -7,7 +7,7 @@
 .content-container {
   position: relative;
   padding: 25px;
-  height: 100vh;
+  height: 100dvh;
   overflow-y: scroll;
   scroll-behavior: smooth;
 }
@@ -33,7 +33,7 @@
   .content-container {
     position: relative;
     padding: 15px;
-    height: 100vh;
+    height: 100dvh;
     overflow-y: hidden;
     overflow-x: hidden;
   }
