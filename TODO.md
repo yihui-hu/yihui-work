@@ -45,3 +45,4 @@
 ## Documentation
 
 - [x] Finish README
+- [ ] Update README with Obsidian workflow
