@@ -57,8 +57,8 @@
   .back-button {
     display: block;
     position: fixed;
-    right: 15px;
-    top: 15px;
+    right: 25px;
+    top: 25px;
   }
 
   .back-button p > a {
@@ -79,5 +79,10 @@
   .about-page-container {
     padding: 15px;
     height: auto;
+  }
+
+  .back-button {
+    right: 15px;
+    top: 15px;
   }
 }
