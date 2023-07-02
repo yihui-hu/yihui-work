@@ -44,13 +44,8 @@
   }
 }
 
-@media screen and (max-width: 864px) {
+@media screen and (max-width: 640px) {
   .links-container {
-    display: flex;
-    flex-direction: column;
-    gap: 55px;
-    height: 100dvh;
     padding: 15px;
-    font-size: 14px;
   }
 }
