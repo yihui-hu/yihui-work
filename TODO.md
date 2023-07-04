@@ -41,6 +41,7 @@
 - [x] Update `I'm currently:` section
 - [ ] Fix footer to be bottom of screen on large devices
 - [ ] Clean up / rename files
+- [ ] Check global styles consistency across files
 
 ## Documentation
 
