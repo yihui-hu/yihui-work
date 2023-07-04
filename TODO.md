@@ -21,9 +21,9 @@
 
 ## Design / Frontend
 
-- [ ] Favicon
+- [x] Favicon
 - [ ] Superellipse elements / border 1px solid black 0.5 opacity
-- [ ] Placeholder album art
+- [x] Placeholder album art
 - [x] Retire Printvetica
 
 ## Bugs / Improvements
