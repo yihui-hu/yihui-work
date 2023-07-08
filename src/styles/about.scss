@@ -24,12 +24,14 @@
 
 .about-image-caption {
   color: gray;
-  margin-top: 7px;
-  font-size: 11px;
+  font-size: 12px;
 }
 
-.about-blurb {
-  width: 60%;
+.about {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .back-button {
@@ -41,12 +43,8 @@
     display: none;
   }
 
-  .about-image-caption {
-    font-size: 12px;
-  }
-
   .about-image,
-  .about-blurb {
+  .about {
     width: 100%;
   }
 

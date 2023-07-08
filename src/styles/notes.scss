@@ -1,0 +1,102 @@
+@use "base";
+
+.note-container {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  gap: 55px;
+  padding: 25px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  background-color: white;
+}
+
+.notes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.notes-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.notes-date {
+  color: #B9B9B9;
+  font-size: 12px;
+}
+
+.note-wrapper {
+  font-family: "Inter Variable", "Arial", system-ui, "Open Sans", sans-serif;
+  font-size: 15px;
+  display: grid;
+  place-items: center;
+  scroll-behavior: smooth;
+  color: black;
+
+  a {
+    color: rgb(154, 154, 154);
+    text-decoration: none;
+
+    &:hover {
+      color: rgb(154, 154, 154);
+      text-decoration: underline;
+    }
+
+    &:visited {
+      color: rgb(154, 154, 154);
+    }
+  }
+
+  > div {
+    width: 50vw;
+  }
+
+  pre,
+  table,
+  img {
+    width: 100%;
+  }
+
+  pre {
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  *::selection {
+    background-color: base.$gray-content;
+    color: white;
+  }
+
+  hr {
+    border: 0.5px solid base.$gray-content;
+  }
+
+  blockquote {
+    border-left: 3px solid #4e4e4e;
+    margin: 20px 0px 20px 20px;
+    padding-block: 15px;
+    padding-inline: 20px;
+    quotes: "\201C""\201D""\2018""\2019";
+
+    p {
+      margin-bottom: 0px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 864px) {
+  .note-wrapper {
+    > div {
+      width: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .note-container {
+    padding: 15px;
+  }
+}
