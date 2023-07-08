@@ -16,14 +16,12 @@ Built over a week during summer break in 2022, pokéSearch is a minimalist Poké
 
 It pulls in data from the publicly available [PokéAPI](https://pokeapi.co/), and was my first project[^1] completed in [React](https://react.dev/). It's not the most polished or performant, but I'm still proud of it. View the project [here](https://pokesearch-simple.netlify.app).
 
-<div className="image-container">
-  ![image](/assets/pokesearch/pokesearch_main.webp)
-  ![image](/assets/pokesearch/pokesearch_mobile_spread.webp)
-  ![image](/assets/pokesearch/pokesearch_moves.webp)
-  ![image](/assets/works/pokesearch_duo.webp)
-  ![image](/assets/pokesearch/pokesearch_all_info.webp)
-  ![image](/assets/pokesearch/pokesearch_mobile.webp)
-</div>
+![image](/assets/pokesearch/pokesearch_main.webp)
+![image](/assets/pokesearch/pokesearch_mobile_spread.webp)
+![image](/assets/pokesearch/pokesearch_moves.webp)
+![image](/assets/works/pokesearch_duo.webp)
+![image](/assets/pokesearch/pokesearch_all_info.webp)
+![image](/assets/pokesearch/pokesearch_mobile.webp)
 
 ---
 

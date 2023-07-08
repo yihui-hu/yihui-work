@@ -20,10 +20,8 @@ No frameworks or additional tooling, just HTML & CSS files neatly arranged into 
 
 View site [here](https://yhhu.xyz), or source code [here](https://github.com/yihui-hu/yhhu-xyz).
 
-<div className="image-container">
-  ![image](/assets/yhhu-xyz/yhhu-xyz_main.webp)
-  ![image](/assets/yhhu-xyz/yhhu-xyz_mobile_1.webp)
-  ![image](/assets/yhhu-xyz/yhhu-xyz_article.webp)
-  ![image](/assets/yhhu-xyz/yhhu-xyz_mobile_2.webp)
-  ![image](/assets/yhhu-xyz/yhhu-xyz_mobile_3.webp)
-</div>
+![image](/assets/yhhu-xyz/yhhu-xyz_main.webp)
+![image](/assets/yhhu-xyz/yhhu-xyz_mobile_1.webp)
+![image](/assets/yhhu-xyz/yhhu-xyz_article.webp)
+![image](/assets/yhhu-xyz/yhhu-xyz_mobile_2.webp)
+![image](/assets/yhhu-xyz/yhhu-xyz_mobile_3.webp)

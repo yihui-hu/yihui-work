@@ -17,19 +17,17 @@ ZINEDEF[^1] is a 60-page zine documenting the moments, experiences, stories, and
 
 Saddle-stitched with military provisions and printed on standard copier paper, I worked on it on and off for about two years—the duration of mandatory military service in the Singapore Armed Forces.  
 
-Below are some sample spreads from the project[^2] ⤵︎
+Below are some sample spreads from the project[^2]:
 
-<div className="image-container">
-  ![image](/assets/ZINEDEF/ZINEDEF_han.webp)
-  ![image](/assets/ZINEDEF/ZINEDEF_abc.webp)
-  ![image](/assets/ZINEDEF/ZINEDEF_milo.webp)
-  ![image](/assets/ZINEDEF/ZINEDEF_expiry.webp)
-  ![image](/assets/ZINEDEF/ZINEDEF_album.webp)
-  ![image](/assets/ZINEDEF/ZINEDEF_ok.webp)
-  ![image](/assets/ZINEDEF/ZINEDEF_eyes.webp)
-  ![image](/assets/ZINEDEF/ZINEDEF_ord.webp)
-  ![image](/assets/works/ZINEDEF_stories.webp)
-</div>
+![image](/assets/ZINEDEF/ZINEDEF_han.webp)
+![image](/assets/ZINEDEF/ZINEDEF_abc.webp)
+![image](/assets/ZINEDEF/ZINEDEF_milo.webp)
+![image](/assets/ZINEDEF/ZINEDEF_expiry.webp)
+![image](/assets/ZINEDEF/ZINEDEF_album.webp)
+![image](/assets/ZINEDEF/ZINEDEF_ok.webp)
+![image](/assets/ZINEDEF/ZINEDEF_eyes.webp)
+![image](/assets/ZINEDEF/ZINEDEF_ord.webp)
+![image](/assets/works/ZINEDEF_stories.webp)
 
 ---
 

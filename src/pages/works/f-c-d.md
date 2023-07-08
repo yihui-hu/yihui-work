@@ -18,8 +18,6 @@ Watch this space... 👀 👍
 
 A collaboration with [Christina](https://christinalj.com).
 
-<div className="image-container">
-  ![image](/assets/f-c-d/f-c-d.webp)
-</div>
+![image](/assets/f-c-d/f-c-d.webp)
 
 <iframe style="border:none;" width="100%" height="590" src="https://www.are.na/christina/competitive-design-website-repo/embed" title="Official Are.na channel for Competitive Designing Mind Sport"></iframe>
