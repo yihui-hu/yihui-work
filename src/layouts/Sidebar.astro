@@ -1,9 +1,10 @@
 ---
 import "../styles/sidebar.scss";
 import "@fontsource/fragment-mono";
-import WorksList from "../components/WorksList";
-import ListeningTo from "../components/ListeningTo";
+import WorkList from "../components/WorkList";
+import ListeningTo from "../components/Listening";
 import Reading from "../components/Reading.astro";
+import Currently from "../components/Currently.astro";
 
 const response = await fetch(
   `https://api.github.com/repos/yihui-hu/yihui-work/commits`
@@ -17,18 +18,23 @@ const js = Date.parse(rawDate);
 const timestamp = js;
 const date = new Date(timestamp);
 const dateFormat = date.toDateString();
+
+// const url = "https://google.com";
+// const dateFormat = "Loading...";
 ---
 
 <div class="sidebar-container">
-  <p class="name">
+  <span class="name">
     <a class="name-link" href="/">Yihui Hu</a>
-    <a class="about-link" href="/about">About</a>
-  </p>
+    <a class="gray-link" href="/about">About</a>
+  </span>
   <div class="about-container">
-    <p class="about-blurb">
-      I like to design and program. Currently studying Computer Science at
-      Tufts.
-    </p>
+    <span class="about-blurb">
+      I like to design and program. Sometimes I <a
+        href="/notes"
+        class="wavy-link">write</a
+      >. Currently studying Computer Science at Tufts.
+    </span>
     <div class="about-links">
       I'm also on:
       <ul class="list">
@@ -46,15 +52,12 @@ const dateFormat = date.toDateString();
       </ul>
     </div>
   </div>
-  <WorksList client:load />
+  <WorkList client:load />
   <ListeningTo client:load />
   <Reading />
-  <div>
-    <p>I'm currently:</p>
-    <p>Enjoying summer 🍉☀️⛱️</p>
-  </div>
+  <Currently />
   <div class="about-blurb">
-    <p>
+    <span>
       This site is built in <a href="https://astro.build" target="_blank"
         >Astro</a
       > and typeset in <a
@@ -64,11 +67,12 @@ const dateFormat = date.toDateString();
         >Inter</a
       >. View the source code <a
         href="https://github.com/yihui-hu/yihui-hu.github.io"
+        class="wavy-link"
         target="_blank">here</a
       >.
-    </p>
+    </span>
   </div>
-  <p class="last-updated">
+  <span class="last-updated">
     <a href={url} id="last-updated"> Last updated: {dateFormat}</a>
-  </p>
+  </span>
 </div>

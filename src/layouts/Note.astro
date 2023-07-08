@@ -1,0 +1,33 @@
+---
+import "@fontsource/fragment-mono";
+import "@fontsource-variable/inter";
+import "../styles/global.scss";
+import "../styles/notes.scss";
+
+const { frontmatter } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="description" content={frontmatter.description} />
+    <title>{frontmatter.title}</title>
+  </head>
+  <body>
+    <div class="note-container">
+      <span class="name">
+        <a class="name-link" href="/">Yihui Hu</a>
+      </span>
+      <div class="note-wrapper">
+        <div>
+          <slot />
+          <div style={{ paddingBlock: "55px" }}>
+            <a href="/notes">← Back to notes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

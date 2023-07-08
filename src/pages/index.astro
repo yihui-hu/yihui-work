@@ -1,6 +1,6 @@
 ---
 import Sidebar from "../layouts/Sidebar.astro";
-import Content from "../components/Content";
+import WorkTable from "../components/WorkTable"
 import "../styles/global.scss";
 import "../styles/index.scss";
 ---
@@ -17,7 +17,7 @@ import "../styles/index.scss";
   <body>
     <div class="index-container">
       <Sidebar />
-      <Content client:only="react" />
+      <WorkTable client:only="react" />
     </div>
   </body>
 </html>

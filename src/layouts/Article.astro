@@ -1,9 +1,10 @@
 ---
 import Sidebar from "./Sidebar.astro";
+import "@fontsource-variable/inter";
 import "../styles/global.scss";
 import "../styles/index.scss";
 import "../styles/article.scss";
-import "@fontsource-variable/inter";
+
 const { frontmatter } = Astro.props;
 ---
 
@@ -26,9 +27,6 @@ const { frontmatter } = Astro.props;
         <Sidebar />
       </div>
       <div class="article-container">
-        <div class="back-button">
-          <p class="back-button"><a href="/">Home</a></p>
-        </div>
         <slot />
       </div>
     </div>
