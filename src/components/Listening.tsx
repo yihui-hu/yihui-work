@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import "../styles/listeningTo.scss";
+import "../styles/currently.scss";
 
 const ListeningTo = () => {
   useEffect(() => {
@@ -10,9 +10,8 @@ const ListeningTo = () => {
       const data = await response.json();
       const track = data.recenttracks.track[0];
       const artist = track.artist["#text"];
-      const title = track.name;
       const image = track.image[2]["#text"];
-      const link = track.url;
+      const { name: title, url: link } = track;
 
       let listening;
       if (track["@attr"] !== undefined) {
@@ -31,33 +30,33 @@ const ListeningTo = () => {
         listening = dateFormat;
       }
 
-      document.getElementById("track-art")!.setAttribute("src", image);
+      document.getElementById("currently-image")!.setAttribute("src", image);
       document.getElementById("track-link")!.setAttribute("href", link);
       document.getElementById("track-title")!.innerHTML = title;
-      document.getElementById("track-artist")!.innerHTML = artist;
+      document.getElementById("track-artist")!.innerHTML = "by " + artist;
       document.getElementById("track-listening")!.innerHTML = listening;
     };
     fetchMusic();
   }, []);
 
   return (
-    <div id="track-wrapper">
-      <p className="header">I'm listening to:</p>
-      <div id="track-container">
+    <div>
+      <span className="currently-header">I'm listening to:</span>
+      <div id="currently-container">
         <a
           id="track-link"
           href="https://open.spotify.com/user/notyihui"
           target="_blank"
         >
           <img
-            id="track-art"
+            id="currently-image"
             src="/assets/placeholders/placeholder-track-art.png"
           />
         </a>
-        <div className="track-info">
-          <p id="track-title">Loading...</p>
-          <p id="track-artist"></p>
-          <p id="track-listening"></p>
+        <div id="currently-info">
+          <span id="track-title">Loading...</span>
+          <span id="track-artist"></span>
+          <span id="track-listening"></span>
         </div>
       </div>
     </div>
