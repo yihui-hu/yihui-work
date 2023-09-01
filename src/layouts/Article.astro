@@ -4,6 +4,7 @@ import "@fontsource-variable/inter";
 import "../styles/global.scss";
 import "../styles/index.scss";
 import "../styles/article.scss";
+import { ViewTransitions } from 'astro:transitions';
 
 const { frontmatter } = Astro.props;
 ---
@@ -20,6 +21,7 @@ const { frontmatter } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="description" content={frontmatter.description} />
     <title>{frontmatter.title}</title>
+    <ViewTransitions />
   </head>
   <body>
     <div class="index-container">

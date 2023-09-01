@@ -1,6 +1,7 @@
 ---
 import NotesSidebar from "../layouts/NotesSidebar.astro";
 import "@fontsource/fragment-mono";
+import { ViewTransitions } from 'astro:transitions';
 ---
 
 <html lang="en">
@@ -10,6 +11,7 @@ import "@fontsource/fragment-mono";
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content="Links to corners of the web" />
     <title>Notes</title>
+    <ViewTransitions />
   </head>
   <body>
     <div class="index-container">

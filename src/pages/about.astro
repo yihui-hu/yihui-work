@@ -3,6 +3,7 @@ import Sidebar from "../layouts/Sidebar.astro";
 import "../styles/global.scss";
 import "../styles/index.scss";
 import "../styles/about.scss";
+import { ViewTransitions } from 'astro:transitions';
 ---
 
 <html lang="en">
@@ -13,6 +14,7 @@ import "../styles/about.scss";
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content="Yihui Hu personal site" />
     <title>About</title>
+    <ViewTransitions />
   </head>
   <body>
     <div class="index-container">

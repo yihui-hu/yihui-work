@@ -2,6 +2,7 @@
 import "@fontsource/fragment-mono";
 import "../styles/global.scss";
 import "../styles/sidebar.scss";
+import { ViewTransitions } from 'astro:transitions';
 ---
 
 <html lang="en">
@@ -11,6 +12,7 @@ import "../styles/sidebar.scss";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="description" content="Links to corners of the web" />
     <title>Links</title>
+    <ViewTransitions />
   </head>
   <body>
     <div class="sidebar-container">
