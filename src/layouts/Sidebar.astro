@@ -1,6 +1,6 @@
 ---
-import "../styles/sidebar.scss";
 import "@fontsource/fragment-mono";
+import "../styles/sidebar.scss";
 import WorkList from "../components/WorkList";
 import ListeningTo from "../components/Listening";
 import Reading from "../components/Reading.astro";
@@ -11,16 +11,16 @@ const response = await fetch(
 );
 const data = await response.json();
 
-const url = data[0].html_url;
+// const url = data[0].html_url;
 
-const rawDate = data[0]!.commit!.committer!.date as string;
-const js = Date.parse(rawDate);
-const timestamp = js;
-const date = new Date(timestamp);
-const dateFormat = date.toDateString();
+// const rawDate = data[0]!.commit!.committer!.date as string;
+// const js = Date.parse(rawDate);
+// const timestamp = js;
+// const date = new Date(timestamp);
+// const dateFormat = date.toDateString();
 
-// const url = "https://google.com";
-// const dateFormat = "Loading...";
+const url = "https://google.com";
+const dateFormat = "Loading...";
 ---
 
 <div class="sidebar-container">

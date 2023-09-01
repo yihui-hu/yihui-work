@@ -4,7 +4,7 @@ import { useStore } from "@nanostores/react";
 import { selectedWorks, selectedTag, selectedWorkItem } from "../store/store";
 import Draggable from "react-draggable";
 import workImages from "../data/workImages";
-import "../styles/content.scss";
+import "../styles/work-table.scss";
 
 const width = window.innerWidth;
 const height = window.innerHeight;

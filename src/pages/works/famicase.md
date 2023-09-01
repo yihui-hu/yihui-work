@@ -23,7 +23,7 @@ I've always wanted to participate after seeing my [favourite](https://coryschmit
 
 On hindsight, I would have spent the time developing an entirely new idea, but I didn't want to miss out on the submission. It didn't fill up until after a few weeks, so I definitely could have done so. Well, I did have my mid-term exams then, so...  
 
-Anyway, here is my entry ⤵︎
+Anyway, here is my entry:
 
 ![image](/assets/famicase/famicase.png)
 

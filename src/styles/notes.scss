@@ -1,16 +1,5 @@
 @use "base";
 
-.note-container {
-  display: flex;
-  flex-direction: column;
-  height: 100dvh;
-  gap: 55px;
-  padding: 25px;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  background-color: white;
-}
-
 .notes-list {
   display: flex;
   flex-direction: column;
@@ -24,17 +13,24 @@
 }
 
 .notes-date {
-  color: #B9B9B9;
+  color: #b9b9b9;
   font-size: 12px;
 }
 
-.note-wrapper {
-  font-family: "Inter Variable", "Arial", system-ui, "Open Sans", sans-serif;
-  font-size: 15px;
-  display: grid;
-  place-items: center;
+.note-container {
+  font-family: -apple-system, system-ui, "Inter Variable", "Arial", sans-serif;
+  padding: 25px 40px 25px 40px;
+  min-height: 100dvh;
+  height: 100dvh;
+  overflow: scroll;
   scroll-behavior: smooth;
   color: black;
+  border-left: 1px solid rgb(232, 232, 232);
+
+  h2 {
+    margin: 0;
+    font-weight: 600;
+  }
 
   a {
     color: rgb(154, 154, 154);
@@ -88,15 +84,17 @@
 }
 
 @media screen and (max-width: 864px) {
-  .note-wrapper {
-    > div {
-      width: auto;
-    }
+  .note-container {
+    padding: 25px 25px 15px 25px;
+    height: auto;
+    min-height: auto;
+
+    border-left: none;
   }
 }
 
 @media screen and (max-width: 640px) {
   .note-container {
-    padding: 15px;
+    padding: 15px 15px 5px 15px;
   }
 }

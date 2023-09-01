@@ -6,7 +6,7 @@
 }
 
 .article-container {
-  font-family: "Inter Variable", "Arial", sans-serif;
+  font-family: -apple-system, system-ui, "Inter Variable", "Arial", sans-serif;
   padding: 25px 40px 25px 40px;
   min-height: 100dvh;
   height: 100dvh;
@@ -20,18 +20,14 @@
     font-weight: 600;
   }
 
-  a, p {
+  a,
+  p {
     font-weight: 300;
-    font-size: 15px;
+    font-size: 16px;
   }
 
   a {
     color: rgb(154, 154, 154);
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
 
     &:visited {
       color: rgb(154, 154, 154);

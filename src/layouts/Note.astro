@@ -1,7 +1,10 @@
 ---
+import NotesSidebar from "./NotesSidebar.astro";
 import "@fontsource/fragment-mono";
 import "@fontsource-variable/inter";
 import "../styles/global.scss";
+import "../styles/index.scss";
+import "../styles/article.scss";
 import "../styles/notes.scss";
 
 const { frontmatter } = Astro.props;
@@ -16,17 +19,12 @@ const { frontmatter } = Astro.props;
     <title>{frontmatter.title}</title>
   </head>
   <body>
-    <div class="note-container">
-      <span class="name">
-        <a class="name-link" href="/">Yihui Hu</a>
-      </span>
-      <div class="note-wrapper">
-        <div>
-          <slot />
-          <div style={{ paddingBlock: "55px" }}>
-            <a href="/notes">← Back to notes</a>
-          </div>
-        </div>
+    <div class="index-container">
+      <div id="sidebar">
+        <NotesSidebar />
+      </div>
+      <div class="note-container">
+        <slot />
       </div>
     </div>
   </body>
