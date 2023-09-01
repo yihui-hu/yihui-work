@@ -12,7 +12,7 @@
 ## Functionality / Code
 
 - [x] .md templates
-- [ ] Refactor Content + Sidebar files
+- [x] Refactor Content + Sidebar files
 - [ ] Update base.scss with more base vars/styling
 - [ ] Compress images
 - [x] Fetch last website update using GitHub API
@@ -21,20 +21,22 @@
 
 ## Design / Frontend
 
-- [x] Favicon
+- [x] Favicon 
+- [ ] Fix Favicon lmao (fixed width / height, circle background)
 - [ ] Superellipse elements / border 1px solid black 0.5 opacity
 - [x] Placeholder album art
 - [x] Retire Printvetica
 
 ## Bugs / Improvements
 
-- [ ] Fix hover work item on tagged view
+- [ ] Fix hover work item on tagged view (use pointer-events?)
+- [ ] Optimize Framer Motion
 - [ ] Check tag syncing with links etc. (all, code, design, art)
 - [x] Fix footer on mobile (article view)
 - [x] Black / dynamic background for article view (use frontmatter)
 - [x] Fix live music
 - [ ] Fix ZINEDEF image widths on article
-- [ ] Fix font size on landscape / standardize (especially in article view)
+- [x] Fix font size on landscape / standardize (especially in article view)
 - [x] Fix framer motion on Safari
 - [x] Remove `<br />` and use `<p>` with margins in `.md` files
 - [x] Fix footer on iPad / tablet devices

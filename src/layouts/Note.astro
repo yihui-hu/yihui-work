@@ -1,9 +1,11 @@
 ---
-import Sidebar from "./Sidebar.astro";
+import NotesSidebar from "./NotesSidebar.astro";
+import "@fontsource/fragment-mono";
 import "@fontsource-variable/inter";
 import "../styles/global.scss";
 import "../styles/index.scss";
 import "../styles/article.scss";
+import "../styles/notes.scss";
 import { ViewTransitions } from 'astro:transitions';
 
 const { frontmatter } = Astro.props;
@@ -12,11 +14,6 @@ const { frontmatter } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="apple-mobile-web-app-status-bar-style"
-      content="black-translucent"
-    />
-    <meta name="theme-color" content="#000000" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="description" content={frontmatter.description} />
@@ -26,18 +23,11 @@ const { frontmatter } = Astro.props;
   <body>
     <div class="index-container">
       <div id="sidebar">
-        <Sidebar />
+        <NotesSidebar />
       </div>
-      <div class="article-container">
+      <div class="note-container">
         <slot />
       </div>
     </div>
   </body>
 </html>
-
-<script>
-  const mobile = window.innerWidth <= 864 ? true : false;
-  document.getElementById("article-body")!.style.backgroundColor = mobile
-    ? "black"
-    : "";
-</script>

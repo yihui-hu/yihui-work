@@ -11,14 +11,12 @@ tags: ["code", "design"]
 
 `Jul 2022`
 `code`
-`design` 
+`design`
 
 A micro-site hosting a collection of my favourite websites in design / content.
 
 View site [here](https://sites-i-like.vercel.app), or source code [here](https://github.com/yihui-hu/sites-i-like).
 
-<div className="image-container">
-  ![image](/assets/s-i-l/s-i-l_main.webp)
-  ![image](/assets/s-i-l/s-i-l_mobile.webp)
-  ![image](/assets/works/s-i-l_grid.webp)
-</div>
+![image](/assets/s-i-l/s-i-l_main.webp)
+![image](/assets/s-i-l/s-i-l_mobile.webp)
+![image](/assets/works/s-i-l_grid.webp)

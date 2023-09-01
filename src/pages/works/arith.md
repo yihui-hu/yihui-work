@@ -16,10 +16,8 @@ arith began as a CLI image compressor / decompressor that my friend Toby and I b
 
 Feel free to play around with your own images [here](https://arith.vercel.app), or view the source code [here](https://github.com/yihui-hu/arith-js).
 
-<div className="image-container">
-  ![image](/assets/works/arith_desktop.webp)
-  ![image](/assets/arith/arith_mobile.png)
-</div>
+![image](/assets/works/arith_desktop.webp)
+![image](/assets/arith/arith_mobile.png)
 
 ```
 Notes originally written on 11 Nov, 2022

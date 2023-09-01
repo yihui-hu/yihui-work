@@ -1,0 +1,100 @@
+@use "base";
+
+.notes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.notes-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.notes-date {
+  color: #b9b9b9;
+  font-size: 12px;
+}
+
+.note-container {
+  font-family: -apple-system, system-ui, "Inter Variable", "Arial", sans-serif;
+  padding: 25px 40px 25px 40px;
+  min-height: 100dvh;
+  height: 100dvh;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  color: black;
+  border-left: 1px solid rgb(232, 232, 232);
+
+  h2 {
+    margin: 0;
+    font-weight: 600;
+  }
+
+  a {
+    color: rgb(154, 154, 154);
+    text-decoration: none;
+
+    &:hover {
+      color: rgb(154, 154, 154);
+      text-decoration: underline;
+    }
+
+    &:visited {
+      color: rgb(154, 154, 154);
+    }
+  }
+
+  > div {
+    width: 50vw;
+  }
+
+  pre,
+  table,
+  img {
+    width: 100%;
+  }
+
+  pre {
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  *::selection {
+    background-color: base.$gray-content;
+    color: white;
+  }
+
+  hr {
+    border: 0.5px solid base.$gray-content;
+  }
+
+  blockquote {
+    border-left: 3px solid #4e4e4e;
+    margin: 20px 0px 20px 20px;
+    padding-block: 15px;
+    padding-inline: 20px;
+    quotes: "\201C""\201D""\2018""\2019";
+
+    p {
+      margin-bottom: 0px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 864px) {
+  .note-container {
+    padding: 25px 25px 15px 25px;
+    height: auto;
+    min-height: auto;
+
+    border-left: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .note-container {
+    padding: 15px 15px 5px 15px;
+  }
+}

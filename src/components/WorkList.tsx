@@ -1,14 +1,13 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { works } from "../data/works";
 import { useStore } from "@nanostores/react";
 import { selectedWorks, selectedTag, selectedWorkItem } from "../store/store";
 import { isMobile } from 'react-device-detect';
-import "../styles/worksList.scss";
+import "../styles/work-list.scss";
 
-const WorksList = () => {
+const WorkList = () => {
   const $selected = useStore(selectedWorks);
   const $tag = useStore(selectedTag);
-  const $workItem = useStore(selectedWorkItem);
 
   useEffect(() => {
     if ($selected === "all") {
@@ -61,30 +60,30 @@ const WorksList = () => {
   return (
     <div className="works-container">
       <div className="tags">
-        <p id="all" className="tag" onClick={() => updateTags("all")}>
+        <span id="all" className="tag" onClick={() => updateTags("all")}>
           all
-        </p>
-        <p
+        </span>
+        <span
           id="code"
           className="tag deselected"
           onClick={() => updateTags("code")}
         >
           code
-        </p>
-        <p
+        </span>
+        <span
           id="design"
           className="tag deselected"
           onClick={() => updateTags("design")}
         >
           design
-        </p>
-        <p
+        </span>
+        <span
           id="art"
           className="tag deselected"
           onClick={() => updateTags("art")}
         >
           art
-        </p>
+        </span>
       </div>
       <hr className="works-hr"></hr>
       <div className="works-list">
@@ -98,9 +97,9 @@ const WorksList = () => {
                 onMouseEnter={isMobile ? () => {} : () => handleHover(work.title, true)}
                 onMouseLeave={isMobile ? () => {} : () => handleHover(work.title, false)}
               >
-                <p className="work-title">{work.title}</p>
-                <p className="work-description">{work.description}</p>
-                <p className="work-blurb">{work.blurb}</p>
+                <span className="work-title">{work.title}</span>
+                <span className="work-description">{work.description}</span>
+                <span className="work-blurb">{work.blurb}</span>
                 <div className="work-label">
                   {work.new ? (
                     <div className="new-label">
@@ -111,8 +110,8 @@ const WorksList = () => {
                           gap: 5,
                         }}
                       >
-                        <p className="new-text">NEW</p>
-                        <p className="new-emoji">🌀</p>
+                        <span className="new-text">NEW</span>
+                        <span className="new-emoji">🌀</span>
                       </div>
                     </div>
                   ) : work.wip ? (
@@ -124,12 +123,12 @@ const WorksList = () => {
                           gap: 5,
                         }}
                       >
-                        <p className="wip-text">WIP</p>
-                        <p className="wip-emoji">🚧</p>
+                        <span className="wip-text">WIP</span>
+                        <span className="wip-emoji">🚧</span>
                       </div>
                     </div>
                   ) : (
-                    <p className="work-year">{work.year}</p>
+                    <span className="work-year">{work.year}</span>
                   )}
                 </div>
               </div>
@@ -141,4 +140,4 @@ const WorksList = () => {
   );
 };
 
-export default WorksList;
+export default WorkList;

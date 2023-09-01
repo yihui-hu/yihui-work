@@ -1,8 +1,9 @@
 ---
 import Sidebar from "../layouts/Sidebar.astro";
-import Content from "../components/Content";
+import WorkTable from "../components/WorkTable"
 import "../styles/global.scss";
 import "../styles/index.scss";
+import { ViewTransitions } from 'astro:transitions';
 ---
 
 <html lang="en">
@@ -13,11 +14,12 @@ import "../styles/index.scss";
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content="Yihui Hu personal site">
     <title>Yihui Hu</title>
+    <ViewTransitions />
   </head>
   <body>
     <div class="index-container">
       <Sidebar />
-      <Content client:only="react" />
+      <WorkTable client:only="react" />
     </div>
   </body>
 </html>

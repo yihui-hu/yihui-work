@@ -1,0 +1,17 @@
+#currently-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+#currently-image {
+  width: 100px;
+  border-radius: 8px;
+}
+
+#currently-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}

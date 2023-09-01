@@ -19,8 +19,6 @@ Don't read too much into it and just [have fun](https://y0p.vercel.app) :0) or v
 
 Inspired by the original [yop](https://fichtre.net/yop).
 
-<div className="image-container">
-  ![image](/assets/works/y0p_veiled.webp)
-  ![image](/assets/y0p/y0p.webp)
-  ![image](/assets/y0p/y0p_inverted.webp)
-</div>
+![image](/assets/works/y0p_veiled.webp)
+![image](/assets/y0p/y0p.webp)
+![image](/assets/y0p/y0p_inverted.webp)

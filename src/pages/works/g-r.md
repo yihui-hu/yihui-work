@@ -23,9 +23,9 @@ In order of appearance:
 | Mercy Otis Warren, 1763 | John Singleton Copley | 2020
 | Louise Queen of Belgians, 1841 | Franz Xaver Winterhalter | 2017
 
-<div className="image-container">
-  ![image](/assets/g-r/g-r_allegory.webp)
-  ![image](/assets/g-r/g-r_flowers.webp)
-  ![image](/assets/g-r/g-r_mercy.webp)
-  ![image](/assets/g-r/g-r_louise.webp)
-</div>
+
+![image](/assets/g-r/g-r_allegory.webp)
+![image](/assets/g-r/g-r_flowers.webp)
+![image](/assets/g-r/g-r_mercy.webp)
+![image](/assets/g-r/g-r_louise.webp)
+

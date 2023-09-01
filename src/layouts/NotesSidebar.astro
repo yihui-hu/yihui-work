@@ -1,0 +1,58 @@
+---
+import "@fontsource/fragment-mono";
+import "../styles/sidebar.scss";
+import "../styles/notes.scss";
+
+interface Note {
+  title: string;
+  date: string;
+  url: string;
+}
+
+const modules = import.meta.glob("../pages/notes/*.md");
+const notes: Note[] = [];
+
+// for filtering testing / misc. notes
+const hidden: string[] = ["README", "Markdown Stress Test"];
+
+for (const path in modules) {
+  await modules[path]().then((mod: any) => {
+    if (!hidden.includes(mod.frontmatter.title)) {
+      const note: Note = {
+        title: mod.frontmatter.title,
+        date: mod.frontmatter.pubDate.split("T")[0],
+        url: mod.url,
+      };
+      notes.push(note);
+    }
+  });
+}
+---
+
+<div class="sidebar-container">
+  <span class="name">
+    <a class="name-link" href="/">Yihui Hu</a>
+    <a class="gray-link" href="/about">About</a>
+  </span>
+  <span class="about-blurb">
+    An ongoing collection of my notes written in <a
+      class="wavy-link"
+      href="https://github.com/yihui-hu/notes"
+      target="_blank">Obsidian</a
+    >.
+  </span>
+  <div class="notes-list">
+    {
+      notes.map((note) => {
+        return (
+          <div class="notes-info">
+            <span class="notes-date">{note.date}</span>
+            <span>
+              <a href={note.url}>{note.title}</a>
+            </span>
+          </div>
+        );
+      })
+    }
+  </div>
+</div>

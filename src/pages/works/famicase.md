@@ -23,11 +23,9 @@ I've always wanted to participate after seeing my [favourite](https://coryschmit
 
 On hindsight, I would have spent the time developing an entirely new idea, but I didn't want to miss out on the submission. It didn't fill up until after a few weeks, so I definitely could have done so. Well, I did have my mid-term exams then, so...  
 
-Anyway, here is my entry ⤵︎
+Anyway, here is my entry:
 
-<div className="image-container">
-  ![image](/assets/famicase/famicase.png)
-</div>
+![image](/assets/famicase/famicase.png)
 
 By way of a dream I had.  
 
@@ -40,11 +38,9 @@ I think it would make for a nice exercise in writing as well.
 Do check out the other amazing entries [here](https://famicase.com/22/). 
 My entry is no. 127.
 
-<div className="image-container">
-  ![image](/assets/famicase/famicase_meteor.jpeg)
-  ![image](/assets/famicase/famicase_meteor_wide.jpeg)
-  ![image](/assets/famicase/famicase_127.jpg)
-</div>
+![image](/assets/famicase/famicase_meteor.jpeg)
+![image](/assets/famicase/famicase_meteor_wide.jpeg)
+![image](/assets/famicase/famicase_127.jpg)
 
 Photos by [@morita_tsuyoshi](https://twitter.com/morita_tsuyoshi) and [@meteor_club](https://twitter.com/meteor_club).
 
@@ -55,6 +51,7 @@ Addendum added on 10 June, 2023
 Unfortunately, I missed out on this year's Famicase exhibition – slots filled up way quicker than last year's. But I'll be sure to submit something next year, and I'll update this page when I do!  
 
 Also, if you're curious, here's what I submitted alongside last year's design:
+
 ```
 1.お名前（本名 または SNSアカウント名、匿名不可） <your name or SNS name>
 (Sample: 目手尾 太郎 or Taro Meteor)

@@ -20,36 +20,6 @@ a {
   }
 }
 
-.name {
-  display: flex;
-  justify-content: space-between;
-}
-
-.name-link {
-  text-decoration: none;
-
-  &:visited {
-    color: black;
-  }
-
-  &:hover {
-    text-decoration: none;
-  }
-}
-
-.about-link {
-  color: base.$gray-content;
-  text-decoration: none;
-
-  &:visited {
-    color: base.$gray-content;
-  }
-
-  &:hover {
-    text-decoration: none;
-  }
-}
-
 .sidebar-container {
   display: flex;
   flex-direction: column;
@@ -64,15 +34,11 @@ a {
 .about-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
 }
 
 .about-blurb {
-  width: 60%;
-}
-
-.about-links {
-  margin-top: 20px;
+  width: 55%;
 }
 
 .list {

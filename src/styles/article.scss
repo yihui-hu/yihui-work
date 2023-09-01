@@ -5,27 +5,9 @@
   color: white;
 }
 
-.wip-banner {
-  background-color: orange;
-  margin-top: -30px;
-  margin-inline: -40px !important;
-  white-space: nowrap;
-  text-overflow: clip;
-}
-
-.wip-banner p {
-  font-size: 10px;
-  color: rgb(201, 87, 0);
-  padding-block: 2px;
-  padding-inline: 7px;
-}
-
 .article-container {
-  font-family: "Inter Variable", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
-  font-size: 15px;
-  padding: 30px 40px 20px 40px;
+  font-family: -apple-system, system-ui, "Inter Variable", "Arial", sans-serif;
+  padding: 25px 40px 25px 40px;
   min-height: 100dvh;
   height: 100dvh;
   overflow-y: scroll;
@@ -33,14 +15,19 @@
   background-color: black;
   color: rgb(223, 223, 223);
 
+  h2 {
+    margin: 0;
+    font-weight: 600;
+  }
+
+  a,
+  p {
+    font-weight: 300;
+    font-size: 16px;
+  }
+
   a {
     color: rgb(154, 154, 154);
-    text-decoration: none;
-
-    &:hover {
-      color: rgb(154, 154, 154);
-      text-decoration: underline;
-    }
 
     &:visited {
       color: rgb(154, 154, 154);
@@ -48,46 +35,14 @@
   }
 }
 
-h1,
-h2 {
-  margin-bottom: 10px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 600;
-  line-height: 1.2;
-}
-
-h3,
-h4,
-h5,
-h6 {
-  margin-bottom: 20px;
-}
-
-p,
-ul,
-li {
-  font-weight: 300;
-}
-
-.article-container p {
-  margin-bottom: 20px;
-}
-
 code {
   font-family: "Fragment Mono", monospace;
   font-size: 13px;
+  color: rgb(144, 144, 144);
   background-color: rgb(37, 37, 37);
   border-radius: 4px;
   padding-block: 2px;
   padding-inline: 4px;
-  color: rgb(144, 144, 144);
 }
 
 .astro-code {
@@ -104,12 +59,14 @@ code {
 .github-dark {
   background-color: rgb(37, 37, 37) !important;
   border: 1px solid rgb(57, 57, 57);
-  margin-bottom: 30px;
+  margin-block: 20px;
 }
 
+/* footnote */
 div [id^="user-content-fnref-"] {
   color: rgb(141, 141, 141);
-  font-weight: 500;
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .footnotes ::marker {
@@ -124,22 +81,10 @@ div [id^="user-content-fnref-"] {
   color: rgb(141, 141, 141) !important;
 }
 
-.image-container {
-  display: grid;
-  align-items: center;
-}
-
-.image-container p {
-  display: grid;
-  gap: 20px;
-}
-
-.image-container img {
+img,
+video {
   width: 100%;
-}
-
-.back-button {
-  display: none;
+  margin-block: 20px;
 }
 
 table {
@@ -149,7 +94,7 @@ table {
   overflow-wrap: break-word;
   border-spacing: 0;
   width: 100%;
-  margin-bottom: 30px;
+  margin-block: 20px;
 }
 
 table tr:not(:last-child) td,
@@ -201,7 +146,7 @@ blockquote {
   quotes: "\201C""\201D""\2018""\2019";
 
   p {
-    margin-bottom: 0px !important;
+    margin: 0 !important;
   }
 }
 
@@ -210,8 +155,8 @@ hr {
 }
 
 iframe {
-  margin-bottom: 20px;
   border-radius: 8px;
+  // margin-block: 20px;
 }
 
 @media screen and (max-width: 864px) {
@@ -224,49 +169,10 @@ iframe {
     height: auto;
     min-height: auto;
   }
-
-  .back-button {
-    display: block;
-    position: fixed;
-    right: 25px;
-    top: 25px;
-  }
-
-  .back-button p {
-    font-family: "Inter Variable", system-ui, -apple-system, BlinkMacSystemFont,
-      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
-      "Helvetica Neue", sans-serif;
-    color: rgb(223, 223, 223);
-    background-color: rgb(0, 0, 0, 0.6);
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-block: 5px;
-  }
-
-  .wip-banner {
-    background-color: orange;
-    margin-top: -15px;
-    margin-inline: -15px !important;
-    margin-bottom: -10px;
-    white-space: nowrap;
-    text-overflow: clip;
-  }
-
-  .wip-banner p {
-    font-size: 10px;
-    color: rgb(201, 87, 0);
-    padding-block: 2px;
-    padding-inline: 7px;
-  }
 }
 
 @media screen and (max-width: 640px) {
   .article-container {
     padding: 15px 15px 5px 15px;
-  }
-
-  .back-button {
-    right: 15px;
-    top: 15px;
   }
 }
