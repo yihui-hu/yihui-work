@@ -11,10 +11,20 @@ interface WorkListItem {
 
 export const works: WorkListItem[] = [
   {
+    title: "are:na",
+    description: "native swift ios app for are.na",
+    blurb: "native ios are.na app",
+    year: "2023–",
+    category: "code design",
+    url: "https://arena-ios-app.vercel.app",
+    new: true,
+    wip: true,
+  },
+  {
     title: "f-c-d",
     description: "figma plugin for competitive designing",
     blurb: "figma plugin",
-    year: "2023",
+    year: "2023–",
     category: "code design",
     url: "/works/f-c-d",
     new: false,
@@ -28,7 +38,7 @@ export const works: WorkListItem[] = [
     category: "code design",
     url: "/works/henesys",
     new: false,
-    wip: true,
+    wip: false,
   },
   {
     title: "y0p",
@@ -37,7 +47,7 @@ export const works: WorkListItem[] = [
     year: "2023",
     category: "code",
     url: "/works/y0p",
-    new: true,
+    new: false,
     wip: false,
   },
   {
@@ -75,7 +85,7 @@ export const works: WorkListItem[] = [
     description: "micro-site of sites I like",
     blurb: "sites I like",
     year: "2022",
-    category: "code, design",
+    category: "code design",
     url: "/works/s-i-l",
     new: false,
     wip: false,

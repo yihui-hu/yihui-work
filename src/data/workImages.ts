@@ -6,6 +6,11 @@ interface WorkImageData {
 
 const workImages: WorkImageData[] = [
   {
+    url: "/assets/works/arena-ios-icon.png",
+    id: "are:na",
+    category: "code design",
+  },
+  {
     url: "/assets/works/20XX_poster.webp",
     id: "20XX",
     category: "art design",
