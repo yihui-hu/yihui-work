@@ -1,45 +1,44 @@
 ---
 import "../styles/currently.scss";
 
-const response = await fetch(
-  `http://api.are.na/v2/channels/perusal/contents?sort=created_at&direction=desc`
-);
+// const response = await fetch(
+//   `http://api.are.na/v2/channels/perusal/contents?sort=created_at&direction=desc`
+// );
 
-const data = await response.json();
-const contents = data.contents;
+// const data = await response.json();
+// const contents = data.contents;
 
-const random_page = Math.floor(Math.random() * 20)
+// const random_page = Math.floor(Math.random() * 20);
 
-var title = contents[random_page].title;
-const image = contents[random_page].image.square.url;
-const source = contents[random_page].source.url;
-const connected_at = contents[random_page].connected_at;
+// var title = contents[random_page].title;
+// const image = contents[random_page].image.square.url;
+// const source = contents[random_page].source.url;
+// const connected_at = contents[random_page].connected_at;
 
-const js = Date.parse(connected_at);
-const timestamp = js;
-const date = new Date(timestamp);
-const dateFormat =
-  date.getHours() +
-  ":" +
-  (date.getMinutes() < 10
-    ? "0" + date.getMinutes()
-    : date.getMinutes()) +
-  ", " +
-  date.toDateString();
+// const js = Date.parse(connected_at);
+// const timestamp = js;
+// const date = new Date(timestamp);
+// const dateFormat =
+//   date.getHours() +
+//   ":" +
+//   (date.getMinutes() < 10
+//     ? "0" + date.getMinutes()
+//     : date.getMinutes()) +
+//   ", " +
+//   date.toDateString();
 
-if (title.length > 80) {
-  title = title.substring(0, 80) + "..."
-}
+// if (title.length > 80) {
+//   title = title.substring(0, 80) + "..."
+// }
 ---
 
 <div>
   <span class="currently-header">I'm reading:</span>
   <div id="currently-container">
-    <a href={source} target="_blank"><img id="currently-image" src={image} /></a>
+    <a href="https://dirt.fyi/article/2023/01/maplestorys-metaverse" target="_blank"><img id="currently-image" src="/assets/maplestory_metaverse.webp" /></a>
     <div id="currently-info">
-      <span>{title}</span>
-      <br />
-      <span>{dateFormat}</span>
+      <span>Maplestory's metaverse</span>
+      <span style={ "opacity: 0.4;" }>May 2024</span>
     </div>
   </div>
 </div>
