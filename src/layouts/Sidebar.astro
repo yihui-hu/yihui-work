@@ -17,7 +17,14 @@ const rawDate = data[0]!.commit!.committer!.date as string;
 const js = Date.parse(rawDate);
 const timestamp = js;
 const date = new Date(timestamp);
-const dateFormat = date.toDateString();
+const dateFormat = 
+  date.getHours() +
+  ":" +
+  (date.getMinutes() < 10
+    ? "0" + date.getMinutes()
+    : date.getMinutes()) +
+  ", " +
+  date.toDateString();
 ---
 
 <div class="sidebar-container">
@@ -27,16 +34,22 @@ const dateFormat = date.toDateString();
   </span>
   <div class="about-container">
     <span class="about-blurb">
-      Working at <a href="https://typo.by" target="_blank">Typo*</a> and studying Computer Science at Tufts.       
-      Find me on <a href="https://are.na/yihui-h" target="_blank">Are.na</a>, 
+      Software Engineering Intern at <a href="https://developer.apple.com/swift/" target="_blank"
+        >Apple</a
+      >, previously at <a href="https://typo.by" target="_blank">Typo*</a>. Find me on <a
+        href="https://are.na/yihui-h"
+        target="_blank">Are.na</a
+      >,
       <a href="https://github.com/yihui-hu" target="_blank">GitHub</a>,
       <a href="https://twitter.com/_yihui" target="_blank">Twitter</a>,
       <a href="https://read.cv/yihui" target="_blank">Read.cv</a>, and
       <a href="/links"> more →</a>
-      {/* Sometimes I <a
+      {
+        /* Sometimes I <a
         href="/notes"
         class="wavy-link">write</a
-      >. */}
+      >. */
+      }
     </span>
   </div>
   <WorkList client:load />
@@ -45,14 +58,15 @@ const dateFormat = date.toDateString();
   <Currently />
   <div class="about-blurb">
     <span>
-      This site is built in <a href="https://astro.build" target="_blank"
-        >Astro</a
-      > and typeset in <a
+      This site is built with
+      <a href="https://astro.build" target="_blank">Astro</a>
+      and typeset in <a
         href="https://fonts.google.com/specimen/Fragment+Mono"
         target="_blank">Fragment Mono</a
-      > and <a href="https://fonts.google.com/specimen/Inter" target="_blank"
-        >Inter</a
-      >. View the source code <a
+      > and
+      <a href="https://fonts.google.com/specimen/Inter" target="_blank">Inter</a
+      >. View the source code
+      <a
         href="https://github.com/yihui-hu/yihui-hu.github.io"
         class="wavy-link"
         target="_blank">here</a

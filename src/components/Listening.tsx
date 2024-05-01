@@ -56,6 +56,7 @@ const ListeningTo = () => {
         <div id="currently-info">
           <span id="track-title">Loading...</span>
           <span id="track-artist"></span>
+          <br />
           <span id="track-listening"></span>
         </div>
       </div>

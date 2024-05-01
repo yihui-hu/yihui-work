@@ -1,18 +1,45 @@
 ---
 import "../styles/currently.scss";
+
+const response = await fetch(
+  `http://api.are.na/v2/channels/perusal/contents?sort=created_at&direction=desc`
+);
+
+const data = await response.json();
+const contents = data.contents;
+
+const random_page = Math.floor(Math.random() * 20)
+
+var title = contents[random_page].title;
+const image = contents[random_page].image.square.url;
+const source = contents[random_page].source.url;
+const connected_at = contents[random_page].connected_at;
+
+const js = Date.parse(connected_at);
+const timestamp = js;
+const date = new Date(timestamp);
+const dateFormat =
+  date.getHours() +
+  ":" +
+  (date.getMinutes() < 10
+    ? "0" + date.getMinutes()
+    : date.getMinutes()) +
+  ", " +
+  date.toDateString();
+
+if (title.length > 80) {
+  title = title.substring(0, 80) + "..."
+}
 ---
 
 <div>
   <span class="currently-header">I'm reading:</span>
   <div id="currently-container">
-    <a
-      href="https://www.goodreads.com/book/show/48553069-typographic-knitting"
-      target="_blank"><img id="currently-image" src="/assets/reading.jpg" /></a
-    >
+    <a href={source} target="_blank"><img id="currently-image" src={image} /></a>
     <div id="currently-info">
-      <span>Typographic Knitting</span>
-      <span>by Rudiger Schlomer</span>
-      <span>Nov 2023</span>
+      <span>{title}</span>
+      <br />
+      <span>{dateFormat}</span>
     </div>
   </div>
 </div>

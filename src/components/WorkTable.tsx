@@ -44,14 +44,14 @@ const WorkTable = () => {
   return (
     <div className="content-wrapper">
       <div className="content-container">
-        <p
+        {/* <p
           id="content-message"
           className={
             $workItem === "none" ? "content-message" : "content-message-hidden"
           }
         >
           Thanks for helping me clear the table.
-        </p>
+        </p> */}
         {images.map((imageData, index) => {
           // 🙏 forgive me
           if (
