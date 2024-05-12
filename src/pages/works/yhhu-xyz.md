@@ -18,7 +18,7 @@ My first foray into the world of web development: a lightweight personal site th
 
 No frameworks or additional tooling, just HTML & CSS files neatly arranged into folders and deployed via GitHub Pages.
 
-View site [here](https://yhhu.xyz), or source code [here](https://github.com/yihui-hu/yhhu-xyz).
+View the source code [here](https://github.com/yihui-hu/yhhu-xyz).
 
 ![image](/assets/yhhu-xyz/yhhu-xyz_main.webp)
 ![image](/assets/yhhu-xyz/yhhu-xyz_mobile_1.webp)

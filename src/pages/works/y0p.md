@@ -9,7 +9,6 @@ tags: ["code"]
 
 ## y0p
 
-`NEW 🌀`
 `May 2023`
 `code`
 

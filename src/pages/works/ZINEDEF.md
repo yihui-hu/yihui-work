@@ -32,4 +32,4 @@ Below are some sample spreads from the project[^2]:
 ---
 
 [^1]: Portmanteau of zine and MINDEF (Ministry of Defence Singapore).
-[^2]: I previously made a small batch of 20 zines and sold it to friends for charity. I don't plan to make any more physical copies, but if you'd like a digital copy of ZINEDEF, please reach out to me via yyihui.hu (at) gmail (dot) com. I'd be more than happy to share a copy with you.
+[^2]: I previously made a small batch of 20 zines and sold it to friends for charity. I don't plan to make anymore physical copies, but if you'd like a digital copy of ZINEDEF, please reach out to me via yyihui.hu (at) gmail (dot) com. I'd be more than happy to share one with you.
