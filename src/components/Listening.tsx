@@ -4,6 +4,31 @@ import "../styles/currently.scss";
 const ListeningTo = () => {
   useEffect(() => {
     const fetchMusic = async () => {
+      const isCached = localStorage.getItem("listeningToCached");
+      const cachedTime = localStorage.getItem("listeningToCacheTimestamp");
+      
+      if (isCached && cachedTime) {
+        const currentTime = new Date().getTime();
+        const fiveMinutes = 5 * 60 * 1000;
+
+        if (currentTime - parseInt(cachedTime) > fiveMinutes) {
+          console.log("Refresh cache");
+        } else {
+          const image = localStorage.getItem("listeningToImage")!;
+          const link = localStorage.getItem("listeningToLink")!;
+          const title = localStorage.getItem("listeningToTitle")!;
+          const artist = localStorage.getItem("listeningToArtist")!;
+          const listening = localStorage.getItem("listeningToListening")!;
+
+          document.getElementById("currently-image")!.setAttribute("src", image);
+          document.getElementById("track-link")!.setAttribute("href", link);
+          document.getElementById("track-title")!.innerHTML = title;
+          document.getElementById("track-artist")!.innerHTML = "by " + artist;
+          document.getElementById("track-listening")!.innerHTML = listening;
+          return;
+        }
+      }
+
       const response = await fetch(
         `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=yihuihu&api_key=4154ee8ba6685b36c18d650291b67dc6&format=json&limit=1`
       );
@@ -35,6 +60,14 @@ const ListeningTo = () => {
       document.getElementById("track-title")!.innerHTML = title;
       document.getElementById("track-artist")!.innerHTML = "by " + artist;
       document.getElementById("track-listening")!.innerHTML = listening;
+
+      localStorage.setItem("listeningToImage", image);
+      localStorage.setItem("listeningToLink", link);
+      localStorage.setItem("listeningToTitle", title);
+      localStorage.setItem("listeningToArtist", artist);
+      localStorage.setItem("listeningToListening", listening);
+      localStorage.setItem("listeningToCacheTimestamp", new Date().getTime().toString());
+      localStorage.setItem("listeningToCached", "true");
     };
     fetchMusic();
   }, []);
