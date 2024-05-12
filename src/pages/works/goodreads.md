@@ -15,14 +15,14 @@ tags: ["design"]
 
 In the process of swapping Sketch for Figma in my workflow, I decided to recreate and refine the [Goodreads](https://goodreads.com) iOS app as a small practice, with cues taken from the likes of [Oku](https://oku.club) and [Literal](https://literal.club).
 
-![image](/assets/goodreads/goodreads_main.jpg)
-![image](/assets/goodreads/goodreads_overview.jpg)
-![image](/assets/goodreads/goodreads_components.jpg)
-![image](/assets/goodreads/goodreads_details.jpg)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/goodreads_main.jpg)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/goodreads_overview.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/goodreads_components.jpg)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/goodreads_details.jpg)
 
 <video controls autoplay>
   <source
-    src="/assets/goodreads/goodreads_demo.mp4"
+    src="https://yihui-work.s3.us-east-2.amazonaws.com/goodreads_demo.mp4"
     type="video/mp4"
   ></source>
 </video>

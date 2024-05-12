@@ -25,7 +25,7 @@ On hindsight, I would have spent the time developing an entirely new idea, but I
 
 Anyway, here is my entry:
 
-![image](/assets/famicase/famicase.png)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/famicase.webp)
 
 By way of a dream I had.  
 
@@ -38,9 +38,9 @@ I think it would make for a nice exercise in writing as well.
 Do check out the other amazing entries [here](https://famicase.com/22/). 
 My entry is no. 127.
 
-![image](/assets/famicase/famicase_meteor.jpeg)
-![image](/assets/famicase/famicase_meteor_wide.jpeg)
-![image](/assets/famicase/famicase_127.jpg)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/famicase_meteor.jpeg)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/famicase_meteor_wide.jpeg)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/famicase_127.jpg)
 
 Photos by [@morita_tsuyoshi](https://twitter.com/morita_tsuyoshi) and [@meteor_club](https://twitter.com/meteor_club).
 

@@ -22,16 +22,16 @@ More than anything, it was an excuse for me to, as best I could, experiment with
 
 I don't create as much art nowadays, but I follow essentially the same practice when coding.
 
-![image](/assets/everyday__/everyday_view_1.webp)
-![image](/assets/everyday__/everyday_view_2.webp)
-![image](/assets/everyday__/everyday_movement.webp)
-![image](/assets/works/everyday_trash.webp)
-![image](/assets/everyday__/everyday_crowds.webp)
-![image](/assets/everyday__/everyday_modernism.webp)
-![image](/assets/everyday__/everyday_transactions.webp)
-![image](/assets/everyday__/everyday_pantry.webp)
-![image](/assets/everyday__/everyday_war.webp)
-![image](/assets/everyday__/everyday_news.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/everyday_view_1.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/everyday_view_2.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/everyday_movement.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/everyday_trash.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/everyday_crowds.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/everyday_modernism.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/everyday_transactions.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/everyday_pantry.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/everyday_war.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/everyday_news.webp)
 
 I can't say I remember exactly what I was trying to achieve with this body of work. And honestly, reading the old curatorial rationale now, I'm not sure I knew back then either. But I feel the last line from the rationale sums up the exhibition well enough:
 

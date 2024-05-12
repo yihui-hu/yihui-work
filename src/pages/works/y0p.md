@@ -18,6 +18,6 @@ Don't read too much into it and just [have fun](https://y0p.vercel.app) :0) or v
 
 Inspired by the original [yop](https://fichtre.net/yop).
 
-![image](/assets/works/y0p_veiled.webp)
-![image](/assets/y0p/y0p.webp)
-![image](/assets/y0p/y0p_inverted.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/y0p_veiled.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/y0p.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/y0p_inverted.webp)

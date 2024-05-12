@@ -24,8 +24,8 @@ In order of appearance:
 | Louise Queen of Belgians, 1841 | Franz Xaver Winterhalter | 2017
 
 
-![image](/assets/g-r/g-r_allegory.webp)
-![image](/assets/g-r/g-r_flowers.webp)
-![image](/assets/g-r/g-r_mercy.webp)
-![image](/assets/g-r/g-r_louise.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/g-r_allegory.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/g-r_flowers.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/g-r_mercy.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/g-r_louise.webp)
 

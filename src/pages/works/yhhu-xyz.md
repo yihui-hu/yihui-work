@@ -20,8 +20,8 @@ No frameworks or additional tooling, just HTML & CSS files neatly arranged into 
 
 View the source code [here](https://github.com/yihui-hu/yhhu-xyz).
 
-![image](/assets/yhhu-xyz/yhhu-xyz_main.webp)
-![image](/assets/yhhu-xyz/yhhu-xyz_mobile_1.webp)
-![image](/assets/yhhu-xyz/yhhu-xyz_article.webp)
-![image](/assets/yhhu-xyz/yhhu-xyz_mobile_2.webp)
-![image](/assets/yhhu-xyz/yhhu-xyz_mobile_3.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/yhhu-xyz_main.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/yhhu-xyz_mobile_1.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/yhhu-xyz_article.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/yhhu-xyz_mobile_2.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/yhhu-xyz_mobile_3.webp)

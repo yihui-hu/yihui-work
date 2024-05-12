@@ -50,7 +50,7 @@ const ListeningTo = () => {
         >
           <img
             id="currently-image"
-            src="/assets/placeholders/placeholder-track-art.png"
+            src="https://yihui-work.s3.us-east-2.amazonaws.com/placeholder-track-art.png"
           />
         </a>
         <div id="currently-info">

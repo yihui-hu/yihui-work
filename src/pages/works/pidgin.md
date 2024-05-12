@@ -14,15 +14,15 @@ tags: ["code"]
 
 The other day, Tyler Angert tweeted this:
 
-[![image](/assets/pidgin/pidgin_tyler_tweet.png)](https://twitter.com/tylerangert/status/1653463336154005505?s=20)
+[![image](https://yihui-work.s3.us-east-2.amazonaws.com/pidgin_tyler_tweet.png)](https://twitter.com/tylerangert/status/1653463336154005505?s=20)
 
 I'd been thinking about this for the longest time too, so I carved out some time after my finals to work on it:
 
-[![image](/assets/pidgin/pidgin_yihui_tweet.png)](https://twitter.com/_yihui/status/1662245427033284609?s=20)
+[![image](https://yihui-work.s3.us-east-2.amazonaws.com/pidgin_yihui_tweet.png)](https://twitter.com/_yihui/status/1662245427033284609?s=20)
 
 Pidgin is a simple Chrome extension that automatically connects tweets to specified Are.na channels when you like and/or bookmark them.
 
 Download the extension [here](https://chrome.google.com/webstore/detail/pidgin/maikbdfilhceffcfpenbfcgohpgnjmem?hl=en&authuser=6), or view the source code [here](https://chrome.google.com/webstore/detail/pidgin/maikbdfilhceffcfpenbfcgohpgnjmem?hl=en&authuser=6).
 
-![image](/assets/pidgin/pidgin_in_use.png)
-![image](/assets/pidgin/pidgin_extension.png)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/pidgin_in_use.png)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/pidgin_extension.png)

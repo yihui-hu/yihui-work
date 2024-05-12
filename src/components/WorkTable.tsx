@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useStore } from "@nanostores/react";
-import { selectedWorks, selectedTag, selectedWorkItem } from "../store/store";
+import { selectedWorks, selectedTag, selectedWorkItem } from "../data/store"
 import Draggable from "react-draggable";
 import workImages from "../data/workImages";
 import "../styles/work-table.scss";
@@ -44,14 +44,6 @@ const WorkTable = () => {
   return (
     <div className="content-wrapper">
       <div className="content-container">
-        {/* <p
-          id="content-message"
-          className={
-            $workItem === "none" ? "content-message" : "content-message-hidden"
-          }
-        >
-          Thanks for helping me clear the table.
-        </p> */}
         {images.map((imageData, index) => {
           // 🙏 forgive me
           if (

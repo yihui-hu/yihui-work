@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { works } from "../data/works";
 import { useStore } from "@nanostores/react";
-import { selectedWorks, selectedTag, selectedWorkItem } from "../store/store";
+import { selectedWorks, selectedTag, selectedWorkItem } from "../data/store";
 import { isMobile } from 'react-device-detect';
 import "../styles/work-list.scss";
 

@@ -19,15 +19,15 @@ Saddle-stitched with military provisions and printed on standard copier paper, I
 
 Below are some sample spreads from the project[^2]:
 
-![image](/assets/ZINEDEF/ZINEDEF_han.webp)
-![image](/assets/ZINEDEF/ZINEDEF_abc.webp)
-![image](/assets/ZINEDEF/ZINEDEF_milo.webp)
-![image](/assets/ZINEDEF/ZINEDEF_expiry.webp)
-![image](/assets/ZINEDEF/ZINEDEF_album.webp)
-![image](/assets/ZINEDEF/ZINEDEF_ok.webp)
-![image](/assets/ZINEDEF/ZINEDEF_eyes.webp)
-![image](/assets/ZINEDEF/ZINEDEF_ord.webp)
-![image](/assets/works/ZINEDEF_stories.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/ZINEDEF_han.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/ZINEDEF_abc.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/ZINEDEF_milo.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/ZINEDEF_expiry.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/ZINEDEF_album.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/ZINEDEF_ok.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/ZINEDEF_eyes.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/ZINEDEF_ord.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/ZINEDEF_stories.webp)
 
 ---
 

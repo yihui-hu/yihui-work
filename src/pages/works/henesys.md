@@ -18,13 +18,13 @@ A barebones bookmarking, capture-anything site, inspired by the likes of [Are.na
 Just a small experiment and exploration of mine. Feel free to check it out [here](https://henesys.online)[^1].
 
 
-![image](/assets/henesys/henesys_main.webp)
-![image](/assets/henesys/henesys_grid.webp)
-![image](/assets/henesys/henesys_icon.webp)
-![image](/assets/works/henesys_tags.webp)
-![image](/assets/henesys/henesys_mobile_spread.webp)
-![image](/assets/henesys/henesys_logos.webp)
-![image](/assets/henesys/henesys_og.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/henesys_main.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/henesys_grid.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/henesys_icon.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/henesys_tags.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/henesys_mobile_spread.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/henesys_logos.webp)
+![image](https://yihui-work.s3.us-east-2.amazonaws.com/henesys_og.webp)
 
 ---
 
