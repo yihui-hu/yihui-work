@@ -1,35 +1,37 @@
 # yihui.work
 
-An updated portfolio / personal site for 2023, built in [Astro](https://astro.build) and typeset in [Fragment Mono](https://fonts.google.com/specimen/Fragment+Mono) and [Inter](https://fonts.google.com/specimen/Inter).
+An updated portfolio / personal site for 2023, built with [Astro](https://astro.build) and typeset in [Fragment Mono](https://fonts.google.com/specimen/Fragment+Mono) and [Inter](https://fonts.google.com/specimen/Inter).
 
 ## 🚧 Project Structure
 
 ```
 /
 ├── public/
-│   └── assets/                 (images of works / for articles)
 │   └── CNAME
 │   └── favicon.svg
+│   └── banana_favicon.svg      (self-explanatory)
 ├── src/
 │   └── pages/
-│       └── about/
-│       └── logs/               (WIP)
+│       └── about.astro
 │       └── works/
-│       └── writing/            (WIP)
+│           └── .md files
+│       └── notes/              (symbolic link to notes repo written in Obsidian)
 │       └── index.astro
+│       └── links.astro
+│       └── notes.astro         (WIP)
+│       └── 404.astro
 │   └── components/             (React components + Astro islands)
-│   └── data/                   (static data of works)
+│   └── data/                   (static data of works and global store for tags)
 │   └── layouts/                (for sidebar and articles)
-│   └── store/                  (global store for tags)
 │   └── styles/ 
 └── package.json
 ```
 
-Project pages in `src/pages/works` are written in `.mdx` files, and each page is exposed as a route based on its filename.
+Project pages in `src/pages/works` are written in `.md` files, and each page is exposed as a route based on its filename.
 
 `src/components/` contains miscellaneous React/Astro components.
 
-All static assets, compressed and converted to `.webp` format wherever possible, live in the `public/` directory.
+All assets, compressed and converted to `.webp` format wherever possible, are hosted on an S3 bucket.
 
 ## 💻 Development
 
@@ -67,6 +69,7 @@ All commands are run from the root of the project, from a terminal:
 8. [https://eternal.how/](https://eternal.how/)
 9. [http://r-m.work/](http://r-m.work/)
 10. [http://studioran.tokyo/](http://studioran.tokyo/)
+
 ## 🛠️ Resources:
 1. [Astro Crash Course in 20 minutes](https://www.youtube.com/watch?v=zrPVTf761OI&t=4s)
 2. [Sass in 100 seconds](https://www.youtube.com/watch?v=akDIJa0AP5c)
