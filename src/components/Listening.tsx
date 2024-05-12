@@ -84,6 +84,7 @@ const ListeningTo = () => {
           <img
             id="currently-image"
             src="https://yihui-work.s3.us-east-2.amazonaws.com/placeholder-track-art.png"
+            className="sidebar_asset"
           />
         </a>
         <div id="currently-info">

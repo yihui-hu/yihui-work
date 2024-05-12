@@ -81,8 +81,8 @@ div [id^="user-content-fnref-"] {
   color: rgb(141, 141, 141) !important;
 }
 
-img,
-video {
+img:not(.sidebar_asset),
+video:not(.sidebar_asset) {
   width: 100%;
   margin-block: 20px;
 }
