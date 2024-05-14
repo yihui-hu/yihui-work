@@ -6,7 +6,7 @@ interface WorkImageData {
 
 const workImages: WorkImageData[] = [
   {
-    url: "https://yihui-work.s3.us-east-2.amazonaws.com/maplestory_card.png",
+    url: "https://yihui-work.s3.us-east-2.amazonaws.com/personas_work_image.png",
     id: "personas",
     category: "design",
   },
