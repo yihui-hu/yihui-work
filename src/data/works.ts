@@ -11,13 +11,23 @@ interface WorkListItem {
 
 export const works: WorkListItem[] = [
   {
+    title: "personas",
+    description: "collection of my in-game characters",
+    blurb: "in-game personas",
+    year: "2024",
+    category: "design art",
+    url: "/personas",
+    new: true,
+    wip: false,
+  },
+  {
     title: "are:na",
     description: "native swift ios app for are.na",
     blurb: "native ios are.na app",
     year: "2023–",
     category: "code design",
     url: "https://arena-ios-app.vercel.app",
-    new: true,
+    new: false,
     wip: true,
   },
   {
