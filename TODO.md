@@ -14,7 +14,7 @@
 - [x] .md templates
 - [x] Refactor Content + Sidebar files
 - [ ] Update base.scss with more base vars/styling
-- [ ] Compress images
+- [x] Compress images (offloaded images to AWS)
 - [x] Fetch last website update using GitHub API
 - [x] Add `<meta name="description" content="...">` to articles using frontmatter
 - [ ] Optimize reader mode for articles (images not showing up)
@@ -22,7 +22,7 @@
 ## Design / Frontend
 
 - [x] Favicon 
-- [ ] Fix Favicon lmao (fixed width / height, circle background)
+- [x] Fix Favicon lmao (fixed width / height, circle background)
 - [ ] Superellipse elements / border 1px solid black 0.5 opacity
 - [x] Placeholder album art
 - [x] Retire Printvetica
