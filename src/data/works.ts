@@ -11,13 +11,23 @@ interface WorkListItem {
 
 export const works: WorkListItem[] = [
   {
+    title: "s-b",
+    description: "web experiment for Typo*",
+    blurb: "web experiment for Typo*",
+    year: "2024",
+    category: "design art",
+    url: "https://superbubble.vercel.app",
+    new: true,
+    wip: false,
+  },
+  {
     title: "personas",
     description: "collection of my in-game characters",
     blurb: "in-game personas",
     year: "2024",
     category: "design art",
     url: "/personas",
-    new: true,
+    new: false,
     wip: false,
   },
   {

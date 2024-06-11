@@ -6,6 +6,11 @@ interface WorkImageData {
 
 const workImages: WorkImageData[] = [
   {
+    url: "https://yihui-work.s3.us-east-2.amazonaws.com/typo_super_bubble.png",
+    id: "s-b",
+    category: "code design"
+  },
+  {
     url: "https://yihui-work.s3.us-east-2.amazonaws.com/personas_work_image.png",
     id: "personas",
     category: "design",
