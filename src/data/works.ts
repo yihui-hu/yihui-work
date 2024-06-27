@@ -13,7 +13,7 @@ export const works: WorkListItem[] = [
   {
     title: "s-b",
     description: "web experiment for Typo*",
-    blurb: "web experiment for Typo*",
+    blurb: "experiment for Typo*",
     year: "2024",
     category: "design art",
     url: "https://superbubble.vercel.app",
